@@ -12,114 +12,78 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50800
+52637
 Successfully changed project path to: /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg
 /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 250.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 183.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg/Assets
 GfxDevice: creating device client; threaded=0
-2021-09-09 17:24:13.514 Unity[4638:219228] DELL SE2417HG preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
-2021-09-09 17:24:13.514 Unity[4638:219228] Metal devices available: 1
-2021-09-09 17:24:13.514 Unity[4638:219228] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
-2021-09-09 17:24:13.514 Unity[4638:219228] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-10 08:51:27.074 Unity[5651:264541] DELL SE2417HG preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-10 08:51:27.074 Unity[5651:264541] Metal devices available: 1
+2021-09-10 08:51:27.074 Unity[5651:264541] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-10 08:51:27.074 Unity[5651:264541] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56638
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56651
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003255 seconds.
+Registered in 0.003730 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 131.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 362.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 11.026 seconds
+- Completed reload, in 11.138 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007639 seconds.
+Registered in 0.007703 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 149.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 349.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.113 seconds
+- Completed reload, in  4.687 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3424 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.1 MB.
-System memory in use after: 315.3 MB.
+System memory in use before: 315.3 MB.
+System memory in use after: 315.5 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3862.
-Total: 5.321132 ms (FindLiveObjects: 0.690685 ms CreateObjectMapping: 0.299412 ms MarkObjects: 4.187539 ms  DeleteObjects: 0.141689 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Battle Dev.unity
-  artifactKey: Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Battle Dev.unity using Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb60d739915ba18a7aea0496f0814126') in 0.021760 seconds
-  Import took 0.029654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015712 seconds.
-  path: Assets/Scenes/Battle Dev.unity
-  artifactKey: Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Battle Dev.unity using Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb60d739915ba18a7aea0496f0814126') in 0.001583 seconds
-  Import took 0.009331 seconds .
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3863.
+Total: 11.161345 ms (FindLiveObjects: 0.700303 ms CreateObjectMapping: 0.958207 ms MarkObjects: 9.358163 ms  DeleteObjects: 0.142950 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006149 seconds.
+Registered in 0.005535 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.119 seconds
+- Completed reload, in  2.190 seconds
 Platform modules already initialized, skipping
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.06 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 307.0 MB.
-System memory in use after: 307.2 MB.
+System memory in use before: 307.1 MB.
+System memory in use after: 307.4 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3866.
-Total: 4.118576 ms (FindLiveObjects: 0.363795 ms CreateObjectMapping: 0.240534 ms MarkObjects: 3.480753 ms  DeleteObjects: 0.032199 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006708 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.316 seconds
-Platform modules already initialized, skipping
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 307.4 MB.
-System memory in use after: 307.6 MB.
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3870.
-Total: 3.607412 ms (FindLiveObjects: 0.544091 ms CreateObjectMapping: 0.231187 ms MarkObjects: 2.803169 ms  DeleteObjects: 0.026550 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3867.
+Total: 4.138111 ms (FindLiveObjects: 0.945398 ms CreateObjectMapping: 0.348283 ms MarkObjects: 2.817257 ms  DeleteObjects: 0.025533 ms)
 
