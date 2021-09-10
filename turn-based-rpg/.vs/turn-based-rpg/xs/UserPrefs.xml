@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{18A39117-D33F-104D-7632-0FBE2C9581A2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/SelectAttackTypeWin.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/SelectAttackTypeWin.cs" Line="42" Column="68" />
+      <File FileName="Assets/Scripts/Core/Character_Base.cs" />
+      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" />
+      <File FileName="Assets/Scripts/Core/ProjectileManager.cs" />
+      <File FileName="Assets/Scripts/Core/Projectile.cs" />
+      <File FileName="Assets/Scripts/Core/LaunchingProjectile.cs" />
+      <File FileName="Assets/Scripts/Core/Route.cs" />
+      <File FileName="Assets/Scripts/Core/UIButton.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="593962a7-54ab-40fa-8d3a-8930525b7344" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
