@@ -12,910 +12,114 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56704
+50800
 Successfully changed project path to: /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg
 /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 117.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 250.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/keithgoodman/A_Workarea/Repos/turn-based-rpg/turn-based-rpg/Assets
 GfxDevice: creating device client; threaded=0
-2021-09-09 14:57:01.530 Unity[2309:139724] DELL SE2417HG preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
-2021-09-09 14:57:01.530 Unity[2309:139724] Metal devices available: 1
-2021-09-09 14:57:01.530 Unity[2309:139724] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
-2021-09-09 14:57:01.530 Unity[2309:139724] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-09 17:24:13.514 Unity[4638:219228] DELL SE2417HG preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-09 17:24:13.514 Unity[4638:219228] Metal devices available: 1
+2021-09-09 17:24:13.514 Unity[4638:219228] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-09-09 17:24:13.514 Unity[4638:219228] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56309
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56638
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001154 seconds.
+Registered in 0.003255 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 113.41 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 131.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.006 seconds
+- Completed reload, in 11.026 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004624 seconds.
+Registered in 0.007639 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 108.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 149.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-WARNING: RGBA Compressed PVRTC 4BPP sRGB format is not supported, decompressing texture
 Mono: successfully reloaded assembly
-- Completed reload, in  1.633 seconds
+- Completed reload, in  3.113 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.10f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3425 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 309.4 MB.
-System memory in use after: 309.4 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3863.
-Total: 3.370188 ms (FindLiveObjects: 0.606331 ms CreateObjectMapping: 0.263044 ms MarkObjects: 2.347924 ms  DeleteObjects: 0.150956 ms)
-
-========================================================================
-Received Prepare
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 3.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 235.7 MB.
-System memory in use after: 235.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3863.
-Total: 2.926681 ms (FindLiveObjects: 0.361350 ms CreateObjectMapping: 0.173790 ms MarkObjects: 2.277868 ms  DeleteObjects: 0.112984 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002615 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.990 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 301.1 MB.
-System memory in use after: 301.2 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3867.
-Total: 3.176314 ms (FindLiveObjects: 0.344091 ms CreateObjectMapping: 0.163449 ms MarkObjects: 2.553684 ms  DeleteObjects: 0.114066 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002598 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.536 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 301.5 MB.
-System memory in use after: 301.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3871.
-Total: 3.007055 ms (FindLiveObjects: 0.343880 ms CreateObjectMapping: 0.174017 ms MarkObjects: 2.376721 ms  DeleteObjects: 0.111604 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002489 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.557 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 301.7 MB.
-System memory in use after: 301.8 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3875.
-Total: 2.919092 ms (FindLiveObjects: 0.354190 ms CreateObjectMapping: 0.171616 ms MarkObjects: 2.278590 ms  DeleteObjects: 0.113878 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003213 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.390 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 302.0 MB.
-System memory in use after: 302.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3879.
-Total: 2.940111 ms (FindLiveObjects: 0.347859 ms CreateObjectMapping: 0.177522 ms MarkObjects: 2.267040 ms  DeleteObjects: 0.146862 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002595 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.404 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 302.2 MB.
-System memory in use after: 302.4 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3883.
-Total: 2.939135 ms (FindLiveObjects: 0.338560 ms CreateObjectMapping: 0.162769 ms MarkObjects: 2.322423 ms  DeleteObjects: 0.114593 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002692 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.423 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 302.4 MB.
-System memory in use after: 302.5 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3887.
-Total: 3.056740 ms (FindLiveObjects: 0.351279 ms CreateObjectMapping: 0.191529 ms MarkObjects: 2.385421 ms  DeleteObjects: 0.127497 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002479 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.491 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 302.7 MB.
-System memory in use after: 302.8 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3891.
-Total: 3.263867 ms (FindLiveObjects: 0.401794 ms CreateObjectMapping: 0.166269 ms MarkObjects: 2.573958 ms  DeleteObjects: 0.120672 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002857 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.522 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 302.9 MB.
-System memory in use after: 303.0 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3895.
-Total: 3.020368 ms (FindLiveObjects: 0.347209 ms CreateObjectMapping: 0.174343 ms MarkObjects: 2.384847 ms  DeleteObjects: 0.113211 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006758 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.103 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 303.1 MB.
-System memory in use after: 303.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3899.
-Total: 7.162806 ms (FindLiveObjects: 0.690892 ms CreateObjectMapping: 0.466094 ms MarkObjects: 5.686643 ms  DeleteObjects: 0.316788 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002575 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.457 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 303.4 MB.
-System memory in use after: 303.5 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3903.
-Total: 3.400808 ms (FindLiveObjects: 0.548286 ms CreateObjectMapping: 0.250925 ms MarkObjects: 2.477872 ms  DeleteObjects: 0.122198 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003583 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.470 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 303.6 MB.
-System memory in use after: 303.7 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3907.
-Total: 4.286071 ms (FindLiveObjects: 0.349709 ms CreateObjectMapping: 0.393905 ms MarkObjects: 3.419610 ms  DeleteObjects: 0.121760 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005162 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.381 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 303.8 MB.
-System memory in use after: 303.9 MB.
+Unloading 3424 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 315.1 MB.
+System memory in use after: 315.3 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3911.
-Total: 5.900487 ms (FindLiveObjects: 0.493652 ms CreateObjectMapping: 0.247513 ms MarkObjects: 4.852783 ms  DeleteObjects: 0.304040 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3862.
+Total: 5.321132 ms (FindLiveObjects: 0.690685 ms CreateObjectMapping: 0.299412 ms MarkObjects: 4.187539 ms  DeleteObjects: 0.141689 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Battle Dev.unity
+  artifactKey: Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Dev.unity using Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb60d739915ba18a7aea0496f0814126') in 0.021760 seconds
+  Import took 0.029654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015712 seconds.
+  path: Assets/Scenes/Battle Dev.unity
+  artifactKey: Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Dev.unity using Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb60d739915ba18a7aea0496f0814126') in 0.001583 seconds
+  Import took 0.009331 seconds .
+
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009289 seconds.
+Registered in 0.006149 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.382 seconds
+- Completed reload, in  2.119 seconds
 Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 304.1 MB.
-System memory in use after: 304.2 MB.
+Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 307.0 MB.
+System memory in use after: 307.2 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3915.
-Total: 3.076079 ms (FindLiveObjects: 0.339629 ms CreateObjectMapping: 0.163473 ms MarkObjects: 2.451035 ms  DeleteObjects: 0.121043 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3866.
+Total: 4.118576 ms (FindLiveObjects: 0.363795 ms CreateObjectMapping: 0.240534 ms MarkObjects: 3.480753 ms  DeleteObjects: 0.032199 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004716 seconds.
+Registered in 0.006708 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.468 seconds
+- Completed reload, in  2.316 seconds
 Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
 Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 304.3 MB.
-System memory in use after: 304.4 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3919.
-Total: 3.008742 ms (FindLiveObjects: 0.340313 ms CreateObjectMapping: 0.164057 ms MarkObjects: 2.387672 ms  DeleteObjects: 0.115888 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002685 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.367 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 304.5 MB.
-System memory in use after: 304.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3923.
-Total: 3.750887 ms (FindLiveObjects: 0.660162 ms CreateObjectMapping: 0.247533 ms MarkObjects: 2.711482 ms  DeleteObjects: 0.130245 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011131 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 6.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in 10.411 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 304.8 MB.
-System memory in use after: 304.9 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3927.
-Total: 5.106213 ms (FindLiveObjects: 0.758543 ms CreateObjectMapping: 0.284418 ms MarkObjects: 3.910431 ms  DeleteObjects: 0.151063 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004082 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.769 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 305.0 MB.
-System memory in use after: 305.2 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3931.
-Total: 54.679021 ms (FindLiveObjects: 1.263254 ms CreateObjectMapping: 0.328212 ms MarkObjects: 52.866395 ms  DeleteObjects: 0.217446 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010429 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.380 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 305.3 MB.
-System memory in use after: 305.4 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3935.
-Total: 3.912221 ms (FindLiveObjects: 0.454336 ms CreateObjectMapping: 0.169187 ms MarkObjects: 3.117415 ms  DeleteObjects: 0.170025 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008514 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.141 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 305.5 MB.
-System memory in use after: 305.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3939.
-Total: 4.312609 ms (FindLiveObjects: 0.600847 ms CreateObjectMapping: 0.319341 ms MarkObjects: 3.208118 ms  DeleteObjects: 0.182793 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.021549 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.279 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 305.8 MB.
-System memory in use after: 305.9 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3943.
-Total: 3.963862 ms (FindLiveObjects: 0.418931 ms CreateObjectMapping: 0.185551 ms MarkObjects: 3.223195 ms  DeleteObjects: 0.133701 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.031859 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.767 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.0 MB.
-System memory in use after: 306.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3947.
-Total: 4.888717 ms (FindLiveObjects: 0.606765 ms CreateObjectMapping: 0.276199 ms MarkObjects: 3.813756 ms  DeleteObjects: 0.190408 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008464 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 6.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.290 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.2 MB.
-System memory in use after: 306.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3951.
-Total: 4.036406 ms (FindLiveObjects: 0.817247 ms CreateObjectMapping: 0.320481 ms MarkObjects: 2.769635 ms  DeleteObjects: 0.127663 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004264 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.976 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.4 MB.
-System memory in use after: 306.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3955.
-Total: 3.269642 ms (FindLiveObjects: 0.420204 ms CreateObjectMapping: 0.244265 ms MarkObjects: 2.476990 ms  DeleteObjects: 0.126920 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004322 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.018 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.7 MB.
-System memory in use after: 306.8 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3959.
-Total: 3.694507 ms (FindLiveObjects: 0.380024 ms CreateObjectMapping: 0.261113 ms MarkObjects: 2.872813 ms  DeleteObjects: 0.178182 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008466 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.095 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.9 MB.
-System memory in use after: 307.0 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3963.
-Total: 3.716591 ms (FindLiveObjects: 0.470232 ms CreateObjectMapping: 0.219187 ms MarkObjects: 2.872643 ms  DeleteObjects: 0.153377 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005294 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.319 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 307.2 MB.
-System memory in use after: 307.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3967.
-Total: 3.336245 ms (FindLiveObjects: 0.398311 ms CreateObjectMapping: 0.184532 ms MarkObjects: 2.620056 ms  DeleteObjects: 0.132026 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006845 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.612 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 307.4 MB.
-System memory in use after: 307.5 MB.
+System memory in use after: 307.6 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3971.
-Total: 14.132364 ms (FindLiveObjects: 1.054821 ms CreateObjectMapping: 0.429615 ms MarkObjects: 12.440841 ms  DeleteObjects: 0.203163 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3870.
+Total: 3.607412 ms (FindLiveObjects: 0.544091 ms CreateObjectMapping: 0.231187 ms MarkObjects: 2.803169 ms  DeleteObjects: 0.026550 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009070 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.841 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 307.6 MB.
-System memory in use after: 307.7 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3975.
-Total: 2.990819 ms (FindLiveObjects: 0.379124 ms CreateObjectMapping: 0.171616 ms MarkObjects: 2.314030 ms  DeleteObjects: 0.124886 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004349 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.922 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 307.8 MB.
-System memory in use after: 308.0 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3979.
-Total: 4.011725 ms (FindLiveObjects: 0.466189 ms CreateObjectMapping: 0.214821 ms MarkObjects: 3.148003 ms  DeleteObjects: 0.181408 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004663 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.950 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 308.1 MB.
-System memory in use after: 308.2 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3983.
-Total: 3.775601 ms (FindLiveObjects: 0.440062 ms CreateObjectMapping: 0.195440 ms MarkObjects: 3.002897 ms  DeleteObjects: 0.135725 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004325 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.218 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 308.3 MB.
-System memory in use after: 308.4 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3987.
-Total: 3.303296 ms (FindLiveObjects: 0.375075 ms CreateObjectMapping: 0.181443 ms MarkObjects: 2.619951 ms  DeleteObjects: 0.125689 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003969 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.915 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 308.5 MB.
-System memory in use after: 308.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3991.
-Total: 3.377268 ms (FindLiveObjects: 0.433081 ms CreateObjectMapping: 0.211648 ms MarkObjects: 2.604345 ms  DeleteObjects: 0.126938 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010685 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 10.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.194 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 308.8 MB.
-System memory in use after: 308.9 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3995.
-Total: 16.415775 ms (FindLiveObjects: 1.149324 ms CreateObjectMapping: 0.291084 ms MarkObjects: 14.736637 ms  DeleteObjects: 0.236854 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002673 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.418 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 309.0 MB.
-System memory in use after: 309.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 3999.
-Total: 4.934677 ms (FindLiveObjects: 0.842522 ms CreateObjectMapping: 0.292606 ms MarkObjects: 3.642459 ms  DeleteObjects: 0.155505 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003127 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.741 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
-Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3343 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 309.2 MB.
-System memory in use after: 309.4 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4003.
-Total: 3.399485 ms (FindLiveObjects: 0.503785 ms CreateObjectMapping: 0.182966 ms MarkObjects: 2.576716 ms  DeleteObjects: 0.134809 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000

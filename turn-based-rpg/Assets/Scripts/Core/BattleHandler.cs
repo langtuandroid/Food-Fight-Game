@@ -215,7 +215,7 @@ public class BattleHandler : MonoBehaviour
             currentAttackType = attackType;
             //selectAttackTypeWin
         }
-    }
+    } //
 
     private bool CheckSpecialAttackReady()
     {
