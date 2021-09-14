@@ -233,3 +233,12 @@ Total: 4.777236 ms (FindLiveObjects: 0.688046 ms CreateObjectMapping: 0.256517 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 13016.170995 seconds.
+  path: Assets/Sprites/Backgrounds/Temp/trash
+  artifactKey: Guid(d6bd9576071c2451db731112daa8ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/Temp/trash using Guid(d6bd9576071c2451db731112daa8ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16aa51e3cf3264b78b116a7f9c215ddd') in 0.079382 seconds
+  Import took 0.147192 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
