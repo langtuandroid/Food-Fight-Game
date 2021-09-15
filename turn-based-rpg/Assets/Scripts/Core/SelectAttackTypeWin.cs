@@ -59,4 +59,10 @@ public class SelectAttackTypeWin : MonoBehaviour
         outputDisplay.text = "";
     }
 
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
+
+
 }

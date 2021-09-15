@@ -167,6 +167,7 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/CodeMonkey/Utils/FunctionPeriodic.cs" />
     <Compile Include="Assets/Scripts/Utility/TimerClass.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/Scripts/Shoot_Flash.cs" />
+    <Compile Include="Assets/Scripts/Core/BattleOverWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/VertexLitCG.shader" />

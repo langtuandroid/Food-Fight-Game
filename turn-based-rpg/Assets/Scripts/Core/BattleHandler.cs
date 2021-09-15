@@ -19,6 +19,8 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] GameObject[] enemyDeck;
     [SerializeField] EnemyAI enemyAI;
     [SerializeField] GameObject SelectAttackTypeWin_pf;
+    [SerializeField] GameObject BattleOverWin_pf;
+
     public Texture2D playerSpritesheet;
     public Texture2D enemySpritesheet;
 
@@ -65,6 +67,8 @@ public class BattleHandler : MonoBehaviour
         {
             playerCharacterBattles[i].CharacterSelected += CharacterSelected;
             enemyCharacterBattles[i].CharacterSelected += CharacterSelected;
+            playerCharacterBattles[i].CharacterDoubleClicked += ShowSelectAttackTypeWin;
+            enemyCharacterBattles[i].CharacterDoubleClicked += ShowTargetInfo;
         }
         if(activeCharacterBattle) SetActiveCharacterBattle(activeCharacterBattle);
         state = State.WaitingForPlayer;
@@ -79,7 +83,7 @@ public class BattleHandler : MonoBehaviour
             {
                 state = State.Busy;
                 //playerCharacterBattles[playerBattleIndex].Attack(enemyCharacterBattles[enemyBattleIndex], ()=> {
-                activeCharacterBattle.Attack(activeEnemyCharacterBattle, ()=> {
+                activeCharacterBattle.Attack(currentAttackType, activeEnemyCharacterBattle, ()=> {
                     // Called when the attack is finished.                    
                     ChooseNextActiveCharacter();
                 });
@@ -108,8 +112,7 @@ public class BattleHandler : MonoBehaviour
                 activeCharacterBattle.HideSelectionCircle();
             }
             activeCharacterBattle = charaterBattle;
-            activeCharacterBattle.ShowSelectionCircle();
-            ShowSelectAttackTypeWin();
+            activeCharacterBattle.ShowSelectionCircle();            
         }     
         else
         {
@@ -128,6 +131,7 @@ public class BattleHandler : MonoBehaviour
     {
         if (TestBattleOver())
         {
+            Instantiate(BattleOverWin_pf);
             return;
         }
 
@@ -163,12 +167,18 @@ public class BattleHandler : MonoBehaviour
         
     }
 
-    private void ShowSelectAttackTypeWin()
+    private void ShowSelectAttackTypeWin(CharacterBattle characterBattle)
     {
         GameObject go = Instantiate(SelectAttackTypeWin_pf);
         selectAttackTypeWin = go.GetComponent<SelectAttackTypeWin>();
         selectAttackTypeWin.OnSelectionMade += AttackTypeSelected;
         selectAttackTypeWin.OnWinClosed += SelectAttackTypeWinClosed;
+    }
+
+    // Called when you double click on a target.
+    private void ShowTargetInfo(CharacterBattle characterBattle)
+    {
+        print("Show Target Info");
     }
 
     private void SelectAttackTypeWinClosed()
@@ -180,6 +190,14 @@ public class BattleHandler : MonoBehaviour
 
     private bool TestBattleOver()
     {
+        int deadEnemies = 0;
+        for (int i = 0; i < enemyCharacterBattles.Count; i++)
+        {
+            if (enemyCharacterBattles[i].IsDead())
+            {
+                deadEnemies++;
+            }
+        }
         //if (playerCharacterBattles[playerBattleIndex].IsDead())
         //{
         //    print("player dead "+ playerBattleIndex);
@@ -194,27 +212,45 @@ public class BattleHandler : MonoBehaviour
         //    CodeMonkey.CMDebug.TextPopupMouse("Player Wins!");
         //    return true;
         //}
-        return false;
+        //
+        return deadEnemies == enemyCharacterBattles.Count;
     }
 
     private void AttackTypeSelected(AttackTypes attackType)
     {
         print("AttackTypeSelected " + attackType);
+
+
+
         if(attackType == AttackTypes.Special && CheckSpecialAttackReady())
         {
+            //Special attacks are specific to type (Birds, Cats, Dogs, etc)
+            //Special attacks will be limited to five (5) uses per battle and will do 1.5x damage
+            //when used on an Ooonimal that is weak against the attacking Ooonimal. When used
+            //against an Ooonimal that is strong against the attacker, the attack does 0.5x
+            //damage. If the Ooonimal being attacked is neutral to the attacker, the attack does
+            //the standard 1.0x damage. 
             currentAttackType = attackType;
         }
 
         if (attackType == AttackTypes.ultimate && CheckUltimateAttackReady())
         {
+            //Ultimate attacks can only be used one time (1) per Ooonimal per battle. All Ultimate
+            //attacks have “splash damage”. When hit, the Ooonimal targeted is damaged 2.0x what a
+            //Basic attack would do and the surrounding opposing Ooonimals (if there are any) are
+            //hurt at a rate of 1.0x like a Basic attack.
+
             currentAttackType = attackType;
         }
 
         if (attackType == AttackTypes.Basic)
         {
+            //A Basic attack 
             currentAttackType = attackType;
-            //selectAttackTypeWin
         }
+
+        selectAttackTypeWin.Die();
+        selectAttackTypeWin = null;
     } //
 
     private bool CheckSpecialAttackReady()

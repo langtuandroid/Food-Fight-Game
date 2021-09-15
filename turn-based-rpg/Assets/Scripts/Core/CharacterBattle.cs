@@ -26,7 +26,12 @@ public class CharacterBattle : MonoBehaviour
     public int positionNumber;
     [SerializeField] public int currentLevel = 0;
 
+    public float clickDelta = 0.35f;  // Max between two click to be considered a double click
+    private bool click = false;
+    private float clickTime;
+
     public UnityAction<CharacterBattle> CharacterSelected;
+    public UnityAction<CharacterBattle> CharacterDoubleClicked;
     private enum State
     {
         Idle,
@@ -46,7 +51,20 @@ public class CharacterBattle : MonoBehaviour
 
     private void OnMouseDown()
     {
-        CharacterSelected?.Invoke(this);
+
+        if (click && Time.time <= (clickTime + clickDelta))
+        {
+            click = false;
+            CharacterDoubleClicked?.Invoke(this);
+        }
+        else
+        {
+            click = true;
+            clickTime = Time.time;
+            CharacterSelected?.Invoke(this);
+        }
+
+
     }
 
     public void Setup(bool isPlayerTeam, int positionNumber)
@@ -117,6 +135,13 @@ public class CharacterBattle : MonoBehaviour
             default:
                 break;
         }
+
+
+        if (click && Time.time > (clickTime + clickDelta))
+        {
+            click = false;
+        }
+
     }
 
     public Vector3 GetPosition()
@@ -147,7 +172,7 @@ public class CharacterBattle : MonoBehaviour
         return healthSystem.IsDead();
     }
 
-    public void Attack(CharacterBattle targetCharacterBattle, Action onAttackComplete)
+    public void Attack(BattleHandler.AttackTypes attackType, CharacterBattle targetCharacterBattle, Action onAttackComplete)
     {
         // What is my attack type?
         // if range go to middle of field
