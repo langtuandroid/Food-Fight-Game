@@ -14,6 +14,7 @@ public class LaunchingProjectile : Projectile
     private Vector2 p0,p1,p2,p3;
     private BattleHandler battleHandler;
     private List<CharacterBattle> enemyTeam;
+    //private GameObject hit_ps;
 
 
     private void Awake()
@@ -21,7 +22,7 @@ public class LaunchingProjectile : Projectile
         battleHandler = FindObjectOfType<BattleHandler>();
         enemyTeam = battleHandler.GetEnemyTeam();
         //enemyTeam = new List<CharacterBattle>();
-        blastRadius.OnObjectInRadius += AddCharToHitList;
+        //blastRadius.OnObjectInRadius += AddCharToHitList;
     }
 
     void Start()
@@ -36,10 +37,11 @@ public class LaunchingProjectile : Projectile
 
     }
 
-    public override void Setup(CharacterBattle attacker, Vector3 shootDir, CharacterBattle target, Action OnHit)
+    public override void Setup(CharacterBattle attacker, Vector3 shootDir, GameObject hit_ps, CharacterBattle target, Action OnHit)
     {
         this.attacker = attacker;
         targetCharacterBattle = target;
+        this.hit_ps = hit_ps;
         OnHitAction = OnHit;
         ProjectileManager attackerPM = attacker.gameObject.GetComponent<ProjectileManager>();
         ProjectileManager targetPM = target.gameObject.GetComponent<ProjectileManager>();
@@ -84,6 +86,7 @@ public class LaunchingProjectile : Projectile
                 if (enemyTeam[i] == characterBattle)
                 {
                     print("\n ############################# This should only happen once ##############");
+                    Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
                 }
             }
 
@@ -92,15 +95,15 @@ public class LaunchingProjectile : Projectile
         }
     }
 
-    // Called when a character is within the blast radius of this projectile.
-    private void AddCharToHitList(CharacterBattle charInRadius)
-    {
-        if (!charInRadius.IsPlayerTeam())
-        {            
-            print("This is an enemy! Add to the list!!!!");
-            enemyTeam.Add(charInRadius);
-        }
-    }
+    //// Called when a character is within the blast radius of this projectile.
+    //private void AddCharToHitList(CharacterBattle charInRadius)
+    //{
+    //    if (!charInRadius.IsPlayerTeam())
+    //    {            
+    //        print("This is an enemy! Add to the list!!!!");
+    //        enemyTeam.Add(charInRadius);
+    //    }
+    //}
 
     // returns a list of positions affected by a hit from the specified positionNumber
     private List<int> GetSplashPositions(int posNum)

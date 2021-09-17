@@ -163,8 +163,7 @@ public class BattleHandler : MonoBehaviour
         for (int i = 0; i < enemyCharacterBattles.Count; i++)
         {
             enemyCharacterBattles[i].HideSelectionCircle();
-        }
-        
+        }        
     }
 
     private void ShowSelectAttackTypeWin(CharacterBattle characterBattle)

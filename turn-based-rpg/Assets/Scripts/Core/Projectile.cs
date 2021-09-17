@@ -11,11 +11,13 @@ public class Projectile : MonoBehaviour
     protected Vector3 shootDir = new Vector3(1.1f,1.1f,1.1f);
     protected CharacterBattle targetCharacterBattle;
     protected Action OnHitAction;
+    protected GameObject hit_ps;
 
-    public virtual void Setup(CharacterBattle attacker, Vector3 shootDir, CharacterBattle targetCharacterBattle, Action OnHit)
+    public virtual void Setup(CharacterBattle attacker, Vector3 shootDir, GameObject hit_ps, CharacterBattle targetCharacterBattle, Action OnHit)
     {
         this.shootDir = shootDir;
         this.targetCharacterBattle = targetCharacterBattle;
+        this.hit_ps = hit_ps;
         OnHitAction = OnHit;
         transform.eulerAngles = new Vector3(0, 0, UtilsClass.GetAngleFromVectorFloat(shootDir));
         Destroy(gameObject, 5f);
@@ -33,6 +35,7 @@ public class Projectile : MonoBehaviour
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
+            Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
             OnHitAction();
             Destroy(gameObject);
         }

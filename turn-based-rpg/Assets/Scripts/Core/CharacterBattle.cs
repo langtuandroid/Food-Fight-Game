@@ -204,7 +204,7 @@ public class CharacterBattle : MonoBehaviour
             attackDir = (targetCharacterBattle.GetPosition() - GetPosition()).normalized;
             characterBase.PlayAnimAttack(this, targetCharacterBattle,() => {
                 // Attack animation has caused damage. (could happen multiple times)
-                targetCharacterBattle.Damage(this, 10);
+                targetCharacterBattle.Damage(this, 50);
             }, () =>  {
                 // Attack completed, slide back
                 Invoke("AttackDone", 1f);

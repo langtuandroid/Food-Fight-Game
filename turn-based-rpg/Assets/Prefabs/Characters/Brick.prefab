@@ -9,6 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7877014288048026522, guid: 84ff74c9c293e46ef87d2a3a3a971178,
         type: 3}
+      propertyPath: hit_ps
+      value: 
+      objectReference: {fileID: 5973145563595080424, guid: ade046e9769874d428c2006da62ddae2,
+        type: 3}
+    - target: {fileID: -7877014288048026522, guid: 84ff74c9c293e46ef87d2a3a3a971178,
+        type: 3}
       propertyPath: projectile_pf
       value: 
       objectReference: {fileID: 521775131671016210, guid: 0dadfdd2994294d87b6fbe79aa886ec5,
