@@ -122,7 +122,6 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/GridPathfinding/PathNode.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Random Tile/Scripts/RandomTile.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/GridInformation/Scripts/GridInformation.cs" />
-    <Compile Include="Assets/AssetPacks/TopDown 2D RPG BE3/ReadMe/Scripts/ReadmeBE3.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/V_ObjectSystem/V_Object.cs" />
     <Compile Include="Assets/TurnBattleSystem/DamagePopups/DamagePopup.cs" />
@@ -169,6 +168,22 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/Scripts/Shoot_Flash.cs" />
     <Compile Include="Assets/Scripts/Core/BattleOverWindow.cs" />
     <Compile Include="Assets/Scripts/Core/DestroyGameObject.cs" />
+    <Compile Include="Assets/AssetPacks/Casual Game Effects/Script/DestroyTime.cs" />
+    <Compile Include="Assets/AssetPacks/Casual Game Effects/Script/SampleSceneUI.cs" />
+    <Compile Include="Assets/Scripts/Screen Management/WorldMapManager.cs" />
+    <Compile Include="Assets/Scripts/Screen Management/LandBehavior.cs" />
+    <Compile Include="Assets/AssetPacks/2D Customizable Characters/Characters/Male/Scripts/CharacterSetup.cs" />
+    <Compile Include="Assets/AssetPacks/2D Customizable Characters/Common/Scripts/SimpleCharacterController.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleBase.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Demos/UISpeechController.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Demos/ScriptedDialogueBehaviour.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Demos/2d scene/RandomMovementBehaviour.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleBehaviour.cs" />
+    <Compile Include="Assets/Viking Crew Tools/Camera controls/MouseOrbitImproved.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Demos/SayRandomThingsBehaviour.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleTmp.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs" />
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/RatioLayoutFitter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/VertexLitCG.shader" />

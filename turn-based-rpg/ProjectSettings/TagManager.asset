@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - World
   - NoMask
+  - ground
   layers:
   - Default
   - TransparentFX
@@ -63,4 +64,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 2929350503
+    locked: 0
+  - name: character
+    uniqueID: 738325443
     locked: 0
