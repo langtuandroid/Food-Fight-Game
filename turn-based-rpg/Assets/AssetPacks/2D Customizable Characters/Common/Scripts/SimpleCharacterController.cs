@@ -63,7 +63,9 @@ public class SimpleCharacterController : MonoBehaviour
 		leftAnimator	= leftObject.GetComponent<Animator>();
 		currentAnimator = downAnimator;
 
-		SpeechBubbleManager.Instance.AddSpeechBubble(transform, "Hello world!");
+		//SpeechBubbleManager.Instance.AddSpeechBubble(transform, "I wonder what this \n land has to offer");
+		SpeechBubbleManager.Instance.AddSpeechBubble(transform, "I wonder what this \nland has to offer", SpeechBubbleManager.SpeechbubbleType.NORMAL, 3f);
+
 	}
 
 	void Update()

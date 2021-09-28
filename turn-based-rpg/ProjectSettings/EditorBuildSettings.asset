@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Land Scenes/Home.unity
     guid: f39714c99b53840f889dd498daef428f
   - enabled: 1
+    path: Assets/Scenes/Battle Scenes/Battle Dev.unity
+    guid: 4128137c06d454f6d96694548fdbadf3
+  - enabled: 1
     path: Assets/TopDownEngine/Demos/StartScreen/StartScreen.unity
     guid: 52360e1567e3fee418407abdfd132d73
   - enabled: 1

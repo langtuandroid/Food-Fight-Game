@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{18A39117-D33F-104D-7632-0FBE2C9581A2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/NPC.cs">
     <Files>
       <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="160" Column="10" />
-      <File FileName="Assets/Scripts/Core/Character_Base.cs" />
-      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" />
+      <File FileName="Assets/Scripts/Core/Character_Base.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Core/ProjectileManager.cs" />
       <File FileName="Assets/Scripts/Core/Projectile.cs" />
       <File FileName="Assets/Scripts/Core/LaunchingProjectile.cs" />
       <File FileName="Assets/Scripts/Core/Route.cs" />
       <File FileName="Assets/Scripts/Core/UIButton.cs" />
       <File FileName="Assets/Scripts/Core/EnemyAI.cs" />
-      <File FileName="Assets/Scripts/Screen Management/WorldMapManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Screen Management/WorldMapManager.cs" Line="73" Column="48" />
       <File FileName="Assets/Scripts/Screen Management/LandBehavior.cs" Line="20" Column="6" />
-      <File FileName="Assets/AssetPacks/2D Customizable Characters/Common/Scripts/SimpleCharacterController.cs" Line="4" Column="23" />
-      <File FileName="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/AssetPacks/2D Customizable Characters/Common/Scripts/SimpleCharacterController.cs" Line="67" Column="81" />
+      <File FileName="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs" Line="11" Column="37" />
+      <File FileName="Assets/Scripts/Core/NPC.cs" Line="50" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
