@@ -186,6 +186,7 @@
     <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/RatioLayoutFitter.cs" />
     <Compile Include="Assets/Scripts/Core/NPC.cs" />
     <Compile Include="Assets/Scripts/Core/Camera_Follow.cs" />
+    <Compile Include="Assets/Scripts/Core/MeshParticleSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/VertexLitCG.shader" />

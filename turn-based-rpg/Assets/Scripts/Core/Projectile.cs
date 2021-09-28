@@ -35,7 +35,11 @@ public class Projectile : MonoBehaviour
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
-            Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
+            if(hit_ps)
+            {
+                Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
+
+            }
             OnHitAction();
             Destroy(gameObject);
         }
