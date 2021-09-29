@@ -12,6 +12,7 @@ public class Projectile : MonoBehaviour
     protected CharacterBattle targetCharacterBattle;
     protected Action OnHitAction;
     protected GameObject hit_ps;
+    [SerializeField] protected AudioSource collisionSnd_as;
 
     public virtual void Setup(CharacterBattle attacker, Vector3 shootDir, GameObject hit_ps, CharacterBattle targetCharacterBattle, Action OnHit)
     {
@@ -32,6 +33,7 @@ public class Projectile : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         print("Base Collision!!");
+        collisionSnd_as.Play();
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {

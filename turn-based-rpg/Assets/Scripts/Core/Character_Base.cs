@@ -9,6 +9,8 @@ using UnityEngine.Events;
  * */
 public class Character_Base : MonoBehaviour {
 
+    [SerializeField] AudioSource shoot_as;
+
     #region BaseSetup
     private V_UnitSkeleton unitSkeleton;
     private V_UnitAnimation unitAnimation;
@@ -111,6 +113,7 @@ public class Character_Base : MonoBehaviour {
 
         if (attacker.GetAttackType() == CharacterBattle.AttackType.Range)
         {
+            if(shoot_as) shoot_as.Play();
             ProjectileManager projectileManager = GetComponent<ProjectileManager>();
             projectileManager.ShootProjectile(attacker, target, onHit);
         }

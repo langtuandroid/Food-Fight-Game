@@ -14,11 +14,15 @@ public class LaunchingProjectile : Projectile
     private Vector2 p0,p1,p2,p3;
     private BattleHandler battleHandler;
     private List<CharacterBattle> enemyTeam;
+    private SpriteRenderer spriteRenderer;
+    private Color spriteColor;
     //private GameObject hit_ps;
 
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteColor = spriteRenderer.color;
         battleHandler = FindObjectOfType<BattleHandler>();
         enemyTeam = battleHandler.GetEnemyTeam();
         //enemyTeam = new List<CharacterBattle>();
@@ -65,9 +69,12 @@ public class LaunchingProjectile : Projectile
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
+
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
+            collisionSnd_as.Play();
+            print("Why not play?");
             OnHitAction();
             //int c = 0;
             List<int> splashPositions = GetSplashPositions(characterBattle.positionNumber);
@@ -91,7 +98,11 @@ public class LaunchingProjectile : Projectile
             }
 
             //print( " inRadius=" + c +" numberOfEnemies="+enemyTeam.Count);
-            Destroy(gameObject);
+            spriteColor.a = 0;
+
+            spriteRenderer.color = spriteColor;
+
+            Destroy(gameObject, 2f);
         }
     }
 

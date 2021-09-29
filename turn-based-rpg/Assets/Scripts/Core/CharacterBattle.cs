@@ -186,7 +186,7 @@ public class CharacterBattle : MonoBehaviour
         Vector3 slideTargetPosition;
         if (charAttackType == AttackType.Range)
         {
-            // Range characters fight from a distance.
+            // Range characters fight from a distance, so stay where you are.
             slideTargetPosition = GetPosition();
         }
         else

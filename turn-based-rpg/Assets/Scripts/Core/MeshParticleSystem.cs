@@ -48,8 +48,12 @@ public class MeshParticleSystem : MonoBehaviour
         // Set up internal UV Normalized Array
         Material material = GetComponent<MeshRenderer>().material;
         Texture mainTexture = material.mainTexture;
-        int textureWidth = mainTexture.width;
+        // Keith you left off here https://www.youtube.com/watch?v=SkkxwsXwEhc 16:21
+        // you got an error so you commented this section out.
+
+        /*int textureWidth = mainTexture.width;
         int texureHeight = mainTexture.height;
+         
 
         List<UVCoords> uvCoordsList = new List<UVCoords>();
         foreach (ParticleUVPixels particleUVPixels in particleUVPixelsArray)
@@ -62,6 +66,7 @@ public class MeshParticleSystem : MonoBehaviour
             uvCoordsList.Add(uvCoords);
         }
         uvCoordsArray = uvCoordsList.ToArray();
+        */
     }
 
     private int AddQuad(Vector3 position, float rotation, Vector3 quadSize, bool skewed, int uvIndex)
