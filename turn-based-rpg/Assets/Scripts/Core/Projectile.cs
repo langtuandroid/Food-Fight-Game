@@ -13,6 +13,13 @@ public class Projectile : MonoBehaviour
     protected Action OnHitAction;
     protected GameObject hit_ps;
     [SerializeField] protected AudioSource collisionSnd_as;
+    private SpriteRenderer spriteRenderer;
+    private Color spriteColor;
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteColor = spriteRenderer.color;
+    }
 
     public virtual void Setup(CharacterBattle attacker, Vector3 shootDir, GameObject hit_ps, CharacterBattle targetCharacterBattle, Action OnHit)
     {
@@ -33,17 +40,21 @@ public class Projectile : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         print("Base Collision!!");
-        collisionSnd_as.Play();
+        
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
+            if(collisionSnd_as) collisionSnd_as.Play();
             if(hit_ps)
             {
                 Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
 
             }
             OnHitAction();
-            Destroy(gameObject);
+
+            spriteColor.a = 0;
+            spriteRenderer.color = spriteColor;
+            //Destroy(gameObject);
         }
     }
 }

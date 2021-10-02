@@ -95,7 +95,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Attack()
     {
-        activeAICharacter.Attack(BattleHandler.AttackTypes.Basic, activePlayerCharacter, () => {
+        activeAICharacter.Attack(BattleHandler.AttackTypes.Basic, activePlayerCharacter, 10f, () => {
             print("***** Attack Done!!! ***** "+ playerCharacterBattles.Count);
             AttackDone?.Invoke();
         });

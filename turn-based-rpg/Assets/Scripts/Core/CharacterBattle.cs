@@ -30,6 +30,9 @@ public class CharacterBattle : MonoBehaviour
     private bool click = false;
     private float clickTime;
 
+    private float currAttackDamage = 50f;
+    private float baseDamage = 10f;
+
     public UnityAction<CharacterBattle> CharacterSelected;
     public UnityAction<CharacterBattle> CharacterDoubleClicked;
     private enum State
@@ -149,7 +152,7 @@ public class CharacterBattle : MonoBehaviour
         return transform.position;
     }
 
-    public void Damage(CharacterBattle attacker, int damageAmount)
+    public void Damage(CharacterBattle attacker, float damageAmount)
     {
         healthSystem.Damage(damageAmount);
         //CodeMonkey.CMDebug.TextPopup("Hit " + healthSystem.GetHealthAmount(), GetPosition());
@@ -172,8 +175,9 @@ public class CharacterBattle : MonoBehaviour
         return healthSystem.IsDead();
     }
 
-    public void Attack(BattleHandler.AttackTypes attackType, CharacterBattle targetCharacterBattle, Action onAttackComplete)
+    public void Attack(BattleHandler.AttackTypes attackType, CharacterBattle targetCharacterBattle, float damage, Action onAttackComplete)
     {
+        currAttackDamage = damage;
         // What is my attack type?
         // if range go to middle of field
         // if melee go to target
@@ -204,7 +208,7 @@ public class CharacterBattle : MonoBehaviour
             attackDir = (targetCharacterBattle.GetPosition() - GetPosition()).normalized;
             characterBase.PlayAnimAttack(this, targetCharacterBattle,() => {
                 // Attack animation has caused damage. (could happen multiple times)
-                targetCharacterBattle.Damage(this, 50);
+                targetCharacterBattle.Damage(this, currAttackDamage);
             }, () =>  {
                 // Attack completed, slide back
                 Invoke("AttackDone", 1f);
@@ -258,5 +262,11 @@ public class CharacterBattle : MonoBehaviour
     {
         return charAttackType;
     }
+
+    public float GetBaseDamage()
+    {
+        return baseDamage;
+    }
+
 
 }

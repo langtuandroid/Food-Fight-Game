@@ -56,11 +56,11 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Editor/SpeechbubbleFitterDrawer.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Rule Override Tile/Scripts/Editor/RuleOverrideTileEditor.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Rule Tile/Scripts/Editor/CustomRuleTileMenu.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Rule Tile/Scripts/Editor/RuleTileEditor.cs" />
     <Compile Include="Assets/AssetPacks/2D Customizable Characters/Characters/Male/Editor/CharacterSetupEditor.cs" />
-    <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/Editor/SpeechbubbleFitterDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

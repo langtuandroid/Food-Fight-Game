@@ -113,12 +113,14 @@ public class Character_Base : MonoBehaviour {
 
         if (attacker.GetAttackType() == CharacterBattle.AttackType.Range)
         {
+            print("Play Shoot!");
             if(shoot_as) shoot_as.Play();
             ProjectileManager projectileManager = GetComponent<ProjectileManager>();
             projectileManager.ShootProjectile(attacker, target, onHit);
         }
         else
         {
+            //if (shoot_as) shoot_as.Play();
 
         }
         print("PlayAnimAttack");

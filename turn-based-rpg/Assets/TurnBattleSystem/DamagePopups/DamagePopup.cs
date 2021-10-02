@@ -19,7 +19,7 @@ using CodeMonkey.Utils;
 public class DamagePopup : MonoBehaviour {
 
     // Create a Damage Popup
-    public static DamagePopup Create(Vector3 position, int damageAmount, bool isCriticalHit) {
+    public static DamagePopup Create(Vector3 position, float damageAmount, bool isCriticalHit) {
         Transform damagePopupTransform = Instantiate(GameAssets.i.pfDamagePopup, position, Quaternion.identity);
 
         DamagePopup damagePopup = damagePopupTransform.GetComponent<DamagePopup>();
@@ -41,7 +41,7 @@ public class DamagePopup : MonoBehaviour {
         textMesh = transform.GetComponent<TextMeshPro>();
     }
 
-    public void Setup(int damageAmount, bool isCriticalHit) {
+    public void Setup(float damageAmount, bool isCriticalHit) {
         textMesh.SetText("-"+ damageAmount.ToString());
         if (!isCriticalHit) {
             // Normal hit

@@ -99,7 +99,6 @@ public class LaunchingProjectile : Projectile
 
             //print( " inRadius=" + c +" numberOfEnemies="+enemyTeam.Count);
             spriteColor.a = 0;
-
             spriteRenderer.color = spriteColor;
 
             Destroy(gameObject, 2f);

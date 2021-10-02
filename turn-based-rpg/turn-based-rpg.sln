@@ -57,9 +57,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools.Editor"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.InventoryEngine.Editor", "MoreMountains.InventoryEngine.Editor.csproj", "{75DD74C4-5B4E-66A8-22BF-C215E7381BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Editor", "MoreMountains.Feedbacks.Editor.csproj", "{27EEED08-3080-C21C-C592-013DC4B3DE8E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{E6CA11C2-7FF8-63B0-C33A-612AA83B0109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Editor", "MoreMountains.Feedbacks.Editor.csproj", "{27EEED08-3080-C21C-C592-013DC4B3DE8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools.Feedbacks.Editor", "MoreMountains.Tools.Feedbacks.Editor.csproj", "{9EBB9E3C-6FE1-C266-A53B-60E06079F9C1}"
 EndProject
@@ -191,14 +191,14 @@ Global
 		{75DD74C4-5B4E-66A8-22BF-C215E7381BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75DD74C4-5B4E-66A8-22BF-C215E7381BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75DD74C4-5B4E-66A8-22BF-C215E7381BE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6CA11C2-7FF8-63B0-C33A-612AA83B0109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6CA11C2-7FF8-63B0-C33A-612AA83B0109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6CA11C2-7FF8-63B0-C33A-612AA83B0109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6CA11C2-7FF8-63B0-C33A-612AA83B0109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EEED08-3080-C21C-C592-013DC4B3DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9EBB9E3C-6FE1-C266-A53B-60E06079F9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9EBB9E3C-6FE1-C266-A53B-60E06079F9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBB9E3C-6FE1-C266-A53B-60E06079F9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU

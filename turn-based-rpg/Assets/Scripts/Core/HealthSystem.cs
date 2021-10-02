@@ -22,7 +22,7 @@ public class HealthSystem
     public event EventHandler OnDead;
 
     private int healthMax;
-    private int health;
+    private float health;
 
     public HealthSystem(int healthMax)
     {
@@ -41,12 +41,12 @@ public class HealthSystem
         return (float)health / healthMax;
     }
 
-    public int GetHealthAmount()
+    public float GetHealthAmount()
     {
         return health;
     }
 
-    public void Damage(int amount)
+    public void Damage(float amount)
     {
         health -= amount;
         if (health < 0)
