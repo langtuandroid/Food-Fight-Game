@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleOverWindow : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class BattleOverWindow : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Done()
+    {
+        SceneManager.LoadScene(WorldMapManager.LandsTypes.home.ToString());
     }
 }

@@ -126,6 +126,7 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/GridPathfinding/UnitMovement.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/GridPathfinding/PathNode.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Random Tile/Scripts/RandomTile.cs" />
+    <Compile Include="Assets/Scripts/Core/AttackButton.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/GridInformation/Scripts/GridInformation.cs" />
     <Compile Include="Assets/Scripts/Core/DestroyGameObject.cs" />
     <Compile Include="Assets/TopDownEngine/ThirdParty/Tilemap/2dExtras/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Assets/Scripts/Core/MeshParticleSystem.cs" />
     <Compile Include="Assets/Scripts/Core/HealthSystem.cs" />
     <Compile Include="Assets/Scripts/Core/ProjectileManager.cs" />
+    <Compile Include="Assets/Scripts/Core/SpecialPowerManager.cs" />
     <Compile Include="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleBehaviour.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/CodeMonkey/CMDebug.cs" />
     <Compile Include="Assets/Scripts/Screen Management/LandBehavior.cs" />
@@ -187,8 +189,6 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/CodeMonkey/Utils/FunctionPeriodic.cs" />
     <Compile Include="Assets/Scripts/Utility/TimerClass.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/Scripts/Shoot_Flash.cs" />
-    <Compile Include="Assets/Scripts/Core/AttackButton.cs" />
-    <Compile Include="Assets/Scripts/Core/LandPowerStructure.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/VertexLitCG.shader" />

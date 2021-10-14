@@ -128,6 +128,8 @@ public class Character_Base : MonoBehaviour {
         {
             // The animation is at it's hit point, like throwing punch. (could happen multiple times)
             // this is for melee. Range attacks should call this when the projectile hits the target.
+            if (shoot_as) shoot_as.Play();
+
             onHit();
         } 
         //unitAnimation.PlayAnimForced(attackUnitAnim, attackDir, 1f, (UnitAnim unitAnim) =>

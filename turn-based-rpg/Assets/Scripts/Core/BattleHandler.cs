@@ -33,10 +33,11 @@ public class BattleHandler : MonoBehaviour
     private int enemyBattleIndex = 0;
     private AttackTypes currentAttackType;
     private bool isPlayerTurn = true;
-    private SelectAttackTypeWin selectAttackTypeWin;
+    //private SelectAttackTypeWin selectAttackTypeWin;
 
     private int specialAttacksLeft = 5;
     private int ultimateAttacksLeft = 1;
+    private SpecialPowerManager specialPowerManager;
 
     private enum State
     {
@@ -52,6 +53,9 @@ public class BattleHandler : MonoBehaviour
     {
         instance = this;
         currentAttackType = AttackTypes.Basic;
+        specialPowerManager = GetComponent<SpecialPowerManager>();
+        float dmg = specialPowerManager.GetSpecialAttackMultiplier(SpecialPowerManager.Lands.Aves_City, SpecialPowerManager.Lands.Irk_Gardens);
+        print("Multiplier = " + dmg);
     }
 
     private void Start()
@@ -155,11 +159,10 @@ public class BattleHandler : MonoBehaviour
 
     public CharacterBattle SpawnCharacter(GameObject character, bool isPlayerTeam, Vector3 pos, int posNum)
     {
-        Vector3 position = pos;
-        GameObject characterTransform = Instantiate(character, position, Quaternion.identity);
+        Vector3 position                = pos;
+        GameObject characterTransform   = Instantiate(character, position, Quaternion.identity);
         CharacterBattle characterBattle = characterTransform.GetComponent<CharacterBattle>();
         characterBattle.Setup(isPlayerTeam, posNum);
-
         return characterBattle;
     }
 
@@ -186,6 +189,11 @@ public class BattleHandler : MonoBehaviour
         }
 
     }
+
+    // roundnum + index
+
+
+
 
     // Keith at some point change this to UpdateTurn.
     private void ChooseNextActiveCharacter()
@@ -241,11 +249,11 @@ public class BattleHandler : MonoBehaviour
         print("Show Target Info");
     }
 
-    private void SelectAttackTypeWinClosed()
-    {
-        selectAttackTypeWin.OnWinClosed -= SelectAttackTypeWinClosed;
-        selectAttackTypeWin = null;
-    }
+    //private void SelectAttackTypeWinClosed()
+    //{
+    //    selectAttackTypeWin.OnWinClosed -= SelectAttackTypeWinClosed;
+    //    selectAttackTypeWin = null;
+    //}
 
 
     private bool TestBattleOver()
@@ -283,13 +291,13 @@ public class BattleHandler : MonoBehaviour
         if (activeCharacterBattle.currentLevel >= minAttackLevel)
         {
             print("Set attack to special!!!");
-            selectAttackTypeWin.UdateDisplay("Set Attack to Special");
+            //selectAttackTypeWin.UdateDisplay("Set Attack to Special");
             return true;
         }
         else
         {
 
-            selectAttackTypeWin.UdateDisplay("Character needs to be at least level "+minAttackLevel+" for this attack. "+ activeCharacterBattle.currentLevel);
+            //selectAttackTypeWin.UdateDisplay("Character needs to be at least level "+minAttackLevel+" for this attack. "+ activeCharacterBattle.currentLevel);
             return false;
         }
     }
@@ -299,12 +307,12 @@ public class BattleHandler : MonoBehaviour
         int minAttackLevel = 10;
         if (activeCharacterBattle.currentLevel >= minAttackLevel)
         {
-            selectAttackTypeWin.UdateDisplay("Set Attack to Ultimate");
+            //selectAttackTypeWin.UdateDisplay("Set Attack to Ultimate");
             return true;
         }
         else
         {
-            selectAttackTypeWin.UdateDisplay("Character needs to be at least level " + minAttackLevel + " for this attack.");
+            //selectAttackTypeWin.UdateDisplay("Character needs to be at least level " + minAttackLevel + " for this attack.");
             return false;
         }
     }

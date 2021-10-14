@@ -11,7 +11,10 @@ public class CharacterBattle : MonoBehaviour
     private Character_Base characterBase;
     private State state;
     [SerializeField] AttackType charAttackType;
+    [SerializeField] SpecialPowerManager.Lands battleLand;
     [SerializeField] MMFeedbacks blinkFeedback;
+    [SerializeField] AudioSource hurt_as;
+
     private Vector3 slideTargetPosition;
     private Action onSlideComplete;
     private bool isPlayerTeam;
@@ -31,7 +34,7 @@ public class CharacterBattle : MonoBehaviour
     private float clickTime;
 
     private float currAttackDamage = 50f;
-    private float baseDamage = 10f;
+    [SerializeField] private float baseDamage = 10f;
 
     public UnityAction<CharacterBattle> CharacterSelected;
     public UnityAction<CharacterBattle> CharacterDoubleClicked;
@@ -49,7 +52,6 @@ public class CharacterBattle : MonoBehaviour
         startingPosition = GetPosition();
         HideSelectionCircle();
         state = State.Idle;
-
     }
 
     private void OnMouseDown()
@@ -162,12 +164,17 @@ public class CharacterBattle : MonoBehaviour
         //Blood_Handler.SpawnBlood(GetPosition(), dirFromToAttacker);
         CodeMonkey.Utils.UtilsClass.ShakeCamera(.05f, .4f);
         blinkFeedback.PlayFeedbacks();
-
+        Invoke(nameof(DoHurt), .5f);
         if (healthSystem.IsDead())
         {
             //Died
             characterBase.PlayAnimLyingUp();
         }
+    }
+
+    private void DoHurt()
+    {
+        if (hurt_as) hurt_as.Play();
     }
 
     public bool IsDead()

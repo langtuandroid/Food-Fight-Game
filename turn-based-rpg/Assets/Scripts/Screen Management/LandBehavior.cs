@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LandBehavior : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class LandBehavior : MonoBehaviour
         if (!isLocked)
         {
             LandClicked?.Invoke(this);
+            SceneManager.LoadScene(landType.ToString());
         }
     }
 }
