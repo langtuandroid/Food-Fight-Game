@@ -35,6 +35,7 @@ public class CharacterBattle : MonoBehaviour
 
     private float currAttackDamage = 50f;
     [SerializeField] private float baseDamage = 10f;
+    //[SerializeField] SpecialPowerManager.Lands homeLand;
 
     public UnityAction<CharacterBattle> CharacterSelected;
     public UnityAction<CharacterBattle> CharacterDoubleClicked;
@@ -275,5 +276,8 @@ public class CharacterBattle : MonoBehaviour
         return baseDamage;
     }
 
-
+    public SpecialPowerManager.Lands GetLand()
+    {
+        return battleLand;
+    }
 }

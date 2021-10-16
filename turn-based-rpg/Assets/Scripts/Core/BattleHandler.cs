@@ -55,7 +55,7 @@ public class BattleHandler : MonoBehaviour
         currentAttackType = AttackTypes.Basic;
         specialPowerManager = GetComponent<SpecialPowerManager>();
         float dmg = specialPowerManager.GetSpecialAttackMultiplier(SpecialPowerManager.Lands.Aves_City, SpecialPowerManager.Lands.Irk_Gardens);
-        print("Multiplier = " + dmg);
+        print("Multiplier = " + dmg); // Keith 
     }
 
     private void Start()
@@ -134,7 +134,7 @@ public class BattleHandler : MonoBehaviour
             currentAttackType = attackType;
         }
 
-        float damage = CalculateDamage();
+        float damage = CalculateDamage(activeCharacterBattle, activeEnemyCharacterBattle);
 
         
         if (state == State.WaitingForPlayer)
@@ -147,9 +147,14 @@ public class BattleHandler : MonoBehaviour
         }
     }
 
-    private float CalculateDamage()
+    //Keith you left off here.
+    public float CalculateDamage(CharacterBattle attacker, CharacterBattle target)
     {
-        float damage = activeCharacterBattle.GetBaseDamage();
+        float multiplier = specialPowerManager.GetSpecialAttackMultiplier(attacker.GetLand(), target.GetLand());
+
+
+        print("CalculateDamage baseDmg=" + attacker.GetBaseDamage() + " " + multiplier);
+        float damage = attacker.GetBaseDamage() * multiplier;
 
         // Stronger? Weaker? Neutral?
 
