@@ -147,4 +147,19 @@ public static class KG_Utils  {
         Gizmos.matrix = oldMatrix;
     }
 
+    // Caluclates the chance of something happeing based on the specified probability.
+    // Example: int chanceAttackMisses = ProbabilityCheck(90). Misses 90% of the time.
+    public static bool ProbabilityCheck(int itemProbability)
+    {
+        float rnd = Random.Range(0, 101);
+        if (rnd <= itemProbability)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }

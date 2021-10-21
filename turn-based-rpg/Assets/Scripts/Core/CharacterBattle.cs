@@ -15,6 +15,13 @@ public class CharacterBattle : MonoBehaviour
     [SerializeField] MMFeedbacks blinkFeedback;
     [SerializeField] AudioSource hurt_as;
 
+    [SerializeField]
+    [Tooltip("Chance attack will miss. Lower for better accuracy")]
+    int chanceOfMiss = 60;
+    [SerializeField]
+    [Tooltip("Chance of critical attack. Higher for better chance of landing a critical blow")]
+    int chanceOfCrit = 2;
+
     private Vector3 slideTargetPosition;
     private Action onSlideComplete;
     private bool isPlayerTeam;
@@ -113,7 +120,6 @@ public class CharacterBattle : MonoBehaviour
         else
         {
             characterBase.PlayAnimIdle(new Vector3(-1, 0));
-
         }
     }
 
@@ -155,11 +161,17 @@ public class CharacterBattle : MonoBehaviour
         return transform.position;
     }
 
-    public void Damage(CharacterBattle attacker, float damageAmount)
+    public void Damage(CharacterBattle attacker, float damageAmount, bool missed = false, bool isCrit = false)
     {
+        //missed = true;
+        if (missed)
+        {
+            DamagePopup.Create(GetPosition(), "MISS!", false, true);
+            return;
+        }
         healthSystem.Damage(damageAmount);
         //CodeMonkey.CMDebug.TextPopup("Hit " + healthSystem.GetHealthAmount(), GetPosition());
-        DamagePopup.Create(GetPosition(), damageAmount, false);
+        DamagePopup.Create(GetPosition(), damageAmount.ToString(), false, true);
         Vector3 dirFromToAttacker = (GetPosition() -  attacker.GetPosition() - GetPosition()).normalized;
 
         //Blood_Handler.SpawnBlood(GetPosition(), dirFromToAttacker);
@@ -216,7 +228,11 @@ public class CharacterBattle : MonoBehaviour
             attackDir = (targetCharacterBattle.GetPosition() - GetPosition()).normalized;
             characterBase.PlayAnimAttack(this, targetCharacterBattle,() => {
                 // Attack animation has caused damage. (could happen multiple times)
-                targetCharacterBattle.Damage(this, currAttackDamage);
+                //int ranNum = UnityEngine.Random.Range(0, 3);
+                //bool missed = UnityEngine.Random.value < 0.50f ? true : false;
+                bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
+                bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
+                targetCharacterBattle.Damage(this, currAttackDamage, missed, isCrit);
             }, () =>  {
                 // Attack completed, slide back
                 Invoke("AttackDone", 1f);
@@ -280,4 +296,10 @@ public class CharacterBattle : MonoBehaviour
     {
         return battleLand;
     }
+
+    public float GetHealthAmount()
+    {
+       return healthSystem.GetHealthAmount();
+    }
+
 }

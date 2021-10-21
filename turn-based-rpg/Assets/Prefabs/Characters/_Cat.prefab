@@ -205,11 +205,11 @@ MonoBehaviour:
   battleLand: 9
   blinkFeedback: {fileID: 7945234542422449680}
   hurt_as: {fileID: 0}
+  chanceOfMiss: 15
   positionNumber: 0
   currentLevel: 0
   clickDelta: 0.35
   baseDamage: 10
-  homeLand: 0
 --- !u!114 &1836670475352320148
 MonoBehaviour:
   m_ObjectHideFlags: 0

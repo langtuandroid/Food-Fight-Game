@@ -54,8 +54,8 @@ public class BattleHandler : MonoBehaviour
         instance = this;
         currentAttackType = AttackTypes.Basic;
         specialPowerManager = GetComponent<SpecialPowerManager>();
-        float dmg = specialPowerManager.GetSpecialAttackMultiplier(SpecialPowerManager.Lands.Aves_City, SpecialPowerManager.Lands.Irk_Gardens);
-        print("Multiplier = " + dmg); // Keith 
+        //float dmg = specialPowerManager.GetSpecialAttackMultiplier(SpecialPowerManager.Lands.Aves_City, SpecialPowerManager.Lands.Irk_Gardens);
+        //print("Multiplier = " + dmg); 
     }
 
     private void Start()
@@ -100,7 +100,7 @@ public class BattleHandler : MonoBehaviour
 
     public void Attack(AttackTypes attackType)
     {
-
+        float damage = activeCharacterBattle.GetBaseDamage();
         /*
          *Attacks have a chance to Miss. Ultimate attacks become more accurate the more turns that have taken 
          * place in the battle. This is to prevent players from using Ultimate attacks when they start every 
@@ -116,6 +116,9 @@ public class BattleHandler : MonoBehaviour
             //damage. If the Ooonimal being attacked is neutral to the attacker, the attack does
             //the standard 1.0x damage. 
             currentAttackType = attackType;
+
+            damage = CalculateDamage(activeCharacterBattle, activeEnemyCharacterBattle);
+
         }
 
         if (attackType == AttackTypes.ultimate && CheckUltimateAttackReady())
@@ -124,8 +127,9 @@ public class BattleHandler : MonoBehaviour
             //attacks have “splash damage”. When hit, the Ooonimal targeted is damaged 2.0x what a
             //Basic attack would do and the surrounding opposing Ooonimals (if there are any) are
             //hurt at a rate of 1.0x like a Basic attack.
-
             currentAttackType = attackType;
+            damage *= 2f; // figure out an equation 
+
         }
 
         if (attackType == AttackTypes.Basic)
@@ -134,7 +138,6 @@ public class BattleHandler : MonoBehaviour
             currentAttackType = attackType;
         }
 
-        float damage = CalculateDamage(activeCharacterBattle, activeEnemyCharacterBattle);
 
         
         if (state == State.WaitingForPlayer)
@@ -147,7 +150,6 @@ public class BattleHandler : MonoBehaviour
         }
     }
 
-    //Keith you left off here.
     public float CalculateDamage(CharacterBattle attacker, CharacterBattle target)
     {
         float multiplier = specialPowerManager.GetSpecialAttackMultiplier(attacker.GetLand(), target.GetLand());

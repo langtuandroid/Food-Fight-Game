@@ -8,6 +8,11 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] GameObject[] AIDeck;
     [SerializeField] Transform[] leftPositions;
     [SerializeField] Transform[] rightPositions;
+
+    [Tooltip("Percentage of the time to attempt a special attack.")]
+    [SerializeField] int chanceOfSpecialAttack;
+
+
     private States state;
     private enum States { WaitingForOpponent, SelectAttacker, SelectTarget, Attacking, AttackDone, busy}
     private List<CharacterBattle> AICharacterBattles;
@@ -70,15 +75,12 @@ public class EnemyAI : MonoBehaviour
         Invoke("ChooseTarget", 2f);
         Invoke("Attack", 3f);
         // Set up a unityAction for turn done and invoke it 
-
     }
 
     private void ChooseAttacker()
     {
         //AICharacterBattles = KG_Utils.ShuffleList(AICharacterBattles);
-
         List<CharacterBattle> livingCharacters = GetRemainingChracters(AICharacterBattles);
-
         int ranNum = Random.Range(0, livingCharacters.Count);
         activeAICharacter = livingCharacters[ranNum];
         activeAICharacter.ShowSelectionCircle();
@@ -86,10 +88,16 @@ public class EnemyAI : MonoBehaviour
 
     private void ChooseTarget()
     {
-        List<CharacterBattle> livingCharacters = GetRemainingChracters(playerCharacterBattles);
+        // Choose special attack for first attack and use probability to attempt it for each attack.
+        // If AI does not have a good special attack target do not attempt.
+        // If no special attack target then check if AI has a character with splash damage.
+        // Attempt ultimate attack after 2-4 turns.
+        // Figure out how to serialize these params so they can be adjusted for harder levels.
 
+        List<CharacterBattle> livingCharacters = GetRemainingChracters(playerCharacterBattles);
         int ranNum = Random.Range(0, livingCharacters.Count);
         activePlayerCharacter = livingCharacters[ranNum];
+        activePlayerCharacter = FindWeakestCharacter(livingCharacters);
         activePlayerCharacter.ShowSelectionCircle(); 
     }
 
@@ -115,5 +123,18 @@ public class EnemyAI : MonoBehaviour
         return theLiving;
     }
 
-
+    private CharacterBattle FindWeakestCharacter(List<CharacterBattle> characterBattles)
+    {
+        CharacterBattle weakChar;
+        //int ranNum = Random.Range(0, characterBattles.Length);
+        weakChar = characterBattles[0];
+        for (int i = 0; i < characterBattles.Count; i++)
+        {
+            if (characterBattles[i].GetHealthAmount() < weakChar.GetHealthAmount() )
+            {
+                weakChar = characterBattles[i];
+            }
+        }
+        return weakChar;
+    }
 }

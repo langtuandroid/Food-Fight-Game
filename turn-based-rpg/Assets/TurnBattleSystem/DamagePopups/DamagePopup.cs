@@ -19,11 +19,11 @@ using CodeMonkey.Utils;
 public class DamagePopup : MonoBehaviour {
 
     // Create a Damage Popup
-    public static DamagePopup Create(Vector3 position, float damageAmount, bool isCriticalHit) {
+    public static DamagePopup Create(Vector3 position, string damageAmount, bool isCriticalHit, bool isMiss) {
         Transform damagePopupTransform = Instantiate(GameAssets.i.pfDamagePopup, position, Quaternion.identity);
 
         DamagePopup damagePopup = damagePopupTransform.GetComponent<DamagePopup>();
-        damagePopup.Setup(damageAmount, isCriticalHit);
+        damagePopup.Setup(damageAmount, isCriticalHit, isMiss);
 
         return damagePopup;
     }
@@ -41,16 +41,22 @@ public class DamagePopup : MonoBehaviour {
         textMesh = transform.GetComponent<TextMeshPro>();
     }
 
-    public void Setup(float damageAmount, bool isCriticalHit) {
+    public void Setup(string damageAmount, bool isCriticalHit, bool missed) {
         textMesh.SetText("-"+ damageAmount.ToString());
-        if (!isCriticalHit) {
-            // Normal hit
-            textMesh.fontSize = 20;
-            textColor = UtilsClass.GetColorFromString("FFC500");
-        } else {
+        if (isCriticalHit) {
             // Critical hit
             textMesh.fontSize = 30;
             textColor = UtilsClass.GetColorFromString("FF2B00");
+        }
+        else if (missed) {
+            // Missed
+            textMesh.fontSize = 10;
+            textColor = UtilsClass.GetColorFromString("FF0000");
+        }
+        else {            
+            // Normal hit
+            textMesh.fontSize = 20;
+            textColor = UtilsClass.GetColorFromString("FFC500");
         }
         textMesh.color = textColor;
         disappearTimer = DISAPPEAR_TIMER_MAX;

@@ -277,6 +277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2720383629812798458, guid: 84ff74c9c293e46ef87d2a3a3a971178,
         type: 3}
+      propertyPath: chanceOfMiss
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720383629812798458, guid: 84ff74c9c293e46ef87d2a3a3a971178,
+        type: 3}
       propertyPath: charAttackType
       value: 1
       objectReference: {fileID: 0}
