@@ -15,7 +15,7 @@ public class EnemyAI : MonoBehaviour
 
     private States state;
     private enum States { WaitingForOpponent, SelectAttacker, SelectTarget, Attacking, AttackDone, busy}
-    private List<CharacterBattle> AICharacterBattles;
+    [SerializeField] private List<CharacterBattle> AICharacterBattles;
     private List<CharacterBattle> playerCharacterBattles;
     private CharacterBattle activeAICharacter;
     private CharacterBattle activePlayerCharacter;
@@ -48,22 +48,27 @@ public class EnemyAI : MonoBehaviour
     public List<CharacterBattle> InitAI(List<CharacterBattle> playerCharacterBattles)
     {
         this.playerCharacterBattles = playerCharacterBattles;
-        AICharacterBattles = new List<CharacterBattle>();
-        AICharacterBattles.Add( SpawnCharacter(AIDeck[0], false, rightPositions[0].position, 0) );
-        AICharacterBattles.Add( SpawnCharacter(AIDeck[1], false, rightPositions[1].position, 1) );
-        AICharacterBattles.Add( SpawnCharacter(AIDeck[2], false, rightPositions[2].position, 2) );
+        //AICharacterBattles = new List<CharacterBattle>();
+        //AICharacterBattles.Add( SpawnCharacter(AIDeck[0], false, rightPositions[0].position, 0) );
+        //AICharacterBattles.Add( SpawnCharacter(AIDeck[1], false, rightPositions[1].position, 1) );
+        //AICharacterBattles.Add( SpawnCharacter(AIDeck[2], false, rightPositions[2].position, 2) );
+
+        for (int i = 0; i < AICharacterBattles.Count; i++)
+        {
+            AICharacterBattles[i].Setup(AICharacterBattles[i].IsPlayerTeam(), AICharacterBattles[i].positionNumber);
+        }
         return AICharacterBattles;
     }
 
-    public CharacterBattle SpawnCharacter(GameObject character, bool isPlayerTeam, Vector3 pos, int posNum)
-    {
-        Vector3 position = pos;
-        GameObject characterTransform = Instantiate(character, position, Quaternion.identity);
-        CharacterBattle characterBattle = characterTransform.GetComponent<CharacterBattle>();
-        characterBattle.Setup(isPlayerTeam, posNum);
+    //public CharacterBattle SpawnCharacter(GameObject character, bool isPlayerTeam, Vector3 pos, int posNum)
+    //{
+    //    Vector3 position = pos;
+    //    GameObject characterTransform = Instantiate(character, position, Quaternion.identity);
+    //    CharacterBattle characterBattle = characterTransform.GetComponent<CharacterBattle>();
+    //    characterBattle.Setup(isPlayerTeam, posNum);
 
-        return characterBattle;
-    }
+    //    return characterBattle;
+    //}
 
 
     // Called from BattleHandler when it's the A.I.'s turn.

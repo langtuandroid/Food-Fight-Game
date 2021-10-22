@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d6490e5e2194c6b88893523210d4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winnerField: {fileID: 2064276242611227335}
 --- !u!1 &2064276242346868209
 GameObject:
   m_ObjectHideFlags: 0

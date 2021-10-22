@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{18A39117-D33F-104D-7632-0FBE2C9581A2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/HealthSystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/BattleOverWindow.cs">
     <Files>
-      <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="58" Column="41" />
-      <File FileName="Assets/Scripts/Core/EnemyAI.cs" Line="111" Column="26" />
-      <File FileName="Assets/Scripts/Core/Character_Base.cs" Line="131" Column="38" />
-      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" Line="172" Column="9" />
-      <File FileName="Assets/Scripts/Core/ProjectileManager.cs" />
+      <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="294" Column="1" />
+      <File FileName="Assets/Scripts/Core/EnemyAI.cs" Line="58" Column="115" />
+      <File FileName="Assets/Scripts/Core/Character_Base.cs" Line="161" Column="12" />
+      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" Line="239" Column="16" />
+      <File FileName="Assets/Scripts/Core/ProjectileManager.cs" Line="18" Column="32" />
       <File FileName="Assets/AssetPacks/2D Customizable Characters/Common/Scripts/SimpleCharacterController.cs" />
       <File FileName="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs" />
       <File FileName="Assets/Scripts/Core/SpecialPowerManager.cs" Line="52" Column="44" />
       <File FileName="Assets/Scripts/Core/AttackButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/TurnBattleSystem/DamagePopups/DamagePopup.cs" Line="53" Column="35" />
-      <File FileName="Assets/Scripts/Core/HealthSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/BattleOverWindow.cs" Line="9" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +19,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Core" expanded="True">
-                  <Node name="HealthSystem.cs" selected="True" />
+                  <Node name="BattleOverWindow.cs" selected="True" />
                 </Node>
                 <Node name="Utility" expanded="True" />
               </Node>

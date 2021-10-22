@@ -16,7 +16,6 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] Transform[] rightPositions;
     [SerializeField] private Transform pfCharacter;
     [SerializeField] GameObject[] playerDeck;
-    [SerializeField] GameObject[] enemyDeck;
     [SerializeField] EnemyAI enemyAI;
     [SerializeField] GameObject SelectAttackTypeWin_pf;
     [SerializeField] GameObject BattleOverWin_pf;
@@ -73,11 +72,15 @@ public class BattleHandler : MonoBehaviour
         for (int i = 0; i < playerCharacterBattles.Count; i++)
         {
             playerCharacterBattles[i].CharacterSelected += CharacterSelected;
-            enemyCharacterBattles[i].CharacterSelected += CharacterSelected;
             //playerCharacterBattles[i].CharacterDoubleClicked += ShowSelectAttackTypeWin;
-            enemyCharacterBattles[i].CharacterDoubleClicked += ShowTargetInfo;
         }
-        if(activeCharacterBattle) SetActiveCharacterBattle(activeCharacterBattle);
+        print("characterbattles " + enemyCharacterBattles.Count);
+        for (int j = 0; j < enemyCharacterBattles.Count; j++)
+        {
+            enemyCharacterBattles[j].CharacterSelected += CharacterSelected;
+            enemyCharacterBattles[j].CharacterDoubleClicked += ShowTargetInfo;
+        }
+        if (activeCharacterBattle) SetActiveCharacterBattle(activeCharacterBattle);
         state = State.WaitingForPlayer;
 
     }
@@ -207,7 +210,7 @@ public class BattleHandler : MonoBehaviour
     {
         if (TestBattleOver())
         {
-            Instantiate(BattleOverWin_pf);
+            state = State.Busy;
             return;
         }
 
@@ -266,6 +269,8 @@ public class BattleHandler : MonoBehaviour
     private bool TestBattleOver()
     {
         int deadEnemies = 0;
+        int deadPlayers = 0;
+        bool isBattleOver = false;
         for (int i = 0; i < enemyCharacterBattles.Count; i++)
         {
             if (enemyCharacterBattles[i].IsDead())
@@ -273,22 +278,28 @@ public class BattleHandler : MonoBehaviour
                 deadEnemies++;
             }
         }
-        //if (playerCharacterBattles[playerBattleIndex].IsDead())
-        //{
-        //    print("player dead "+ playerBattleIndex);
-        //    // Player dead, enemy wins
-        //    CodeMonkey.CMDebug.TextPopupMouse("Enemy Wins!");
-        //    return true;
-        //}
-        //if (enemyCharacterBattles[enemyBattleIndex].IsDead())
-        //{
-        //    print("enemy dead " + enemyBattleIndex);
-        //    // Enemy dead, player wins
-        //    CodeMonkey.CMDebug.TextPopupMouse("Player Wins!");
-        //    return true;
-        //}
-        //
-        return deadEnemies == enemyCharacterBattles.Count;
+
+        for (int i = 0; i < playerCharacterBattles.Count; i++)
+        {
+            if (playerCharacterBattles[i].IsDead())
+            {
+                deadPlayers++;
+            }
+        }
+
+        if (deadEnemies == enemyCharacterBattles.Count || deadPlayers == playerCharacterBattles.Count)
+        {
+            bool isPlayerTheWinner = false;
+            if(deadEnemies == enemyCharacterBattles.Count)
+            {
+                isPlayerTheWinner = true;
+            }
+            GameObject go = Instantiate(BattleOverWin_pf);
+            BattleOverWindow battleOverWindow = go.GetComponent<BattleOverWindow>();
+            battleOverWindow.Init("John Doe", isPlayerTheWinner);
+            isBattleOver = true;   
+        }
+        return isBattleOver;
     }
 
 
@@ -328,7 +339,7 @@ public class BattleHandler : MonoBehaviour
 
     public void CharacterSelected(CharacterBattle characterBattle)
     {
-        print("CharacterSelected "+characterBattle.IsPlayerTeam());
+        //print("CharacterSelected "+characterBattle.IsPlayerTeam());
         //if (characterBattle.IsPlayerTeam())
         //{
             SetActiveCharacterBattle(characterBattle);

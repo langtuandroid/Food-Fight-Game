@@ -74,13 +74,10 @@ public class LaunchingProjectile : Projectile
         if (characterBattle == targetCharacterBattle)
         {
             collisionSnd_as.Play();
-            print("Why not play?");
             OnHitAction();
             //int c = 0;
             List<int> splashPositions = GetSplashPositions(characterBattle.positionNumber);
             List<CharacterBattle> splashList = GetSplashList(splashPositions);
-            print("COUNT THE ENEMIES " + enemyTeam.Count);
-            print("splashPositions=" + splashPositions.Count+ " splashList=" + splashList.Count);
             for (int i = 0; i < splashList.Count; i++)
             {
                 //float distanceSqr = (transform.position - enemyTeam[i].transform.position).sqrMagnitude;

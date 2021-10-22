@@ -108,7 +108,8 @@ public class Character_Base : MonoBehaviour {
 
     // Keith 
 
-    public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit, Action onComplete)
+    //public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit, Action onComplete)
+    public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit)
     {
 
         if (attacker.GetAttackType() == CharacterBattle.AttackType.Range)
@@ -140,24 +141,24 @@ public class Character_Base : MonoBehaviour {
         //    if (onHit != null) onHit();
         //}, null);
 
-        if (onComplete != null)
-        {
-            print("Attack ani done");
-            // This will probably be called when the animation is done.
-            // How can I call it on a delay for now?
-            // Maybe a custom timer for each char?
+        //if (onComplete != null)
+        //{
+        //    print("Attack ani done");
+        //    // This will probably be called when the animation is done.
+        //    // How can I call it on a delay for now?
+        //    // Maybe a custom timer for each char?
 
 
 
-            // Keith, figure out what type of attack this character is doing (projectile, magic, melee...)
-            // for melee this can be called when the animation is done.
-            // For range it should be called after the last projectile has hit it's target
-            onComplete();
-        }
-        else
-        {
-            print("Attack ani done but onComplete action is null");
-        }
+        //    // Keith, figure out what type of attack this character is doing (projectile, magic, melee...)
+        //    // for melee this can be called when the animation is done.
+        //    // For range it should be called after the last projectile has hit it's target
+        //    onComplete();
+        //}
+        //else
+        //{
+        //    print("Attack ani done but onComplete action is null");
+        //}
 
     }
 

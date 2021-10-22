@@ -24,7 +24,7 @@ public class CharacterBattle : MonoBehaviour
 
     private Vector3 slideTargetPosition;
     private Action onSlideComplete;
-    private bool isPlayerTeam;
+    [SerializeField] private bool isPlayerTeam;
     private GameObject selectionCircleGameObject;
     private HealthSystem healthSystem;
     private World_Bar healthBar;
@@ -33,7 +33,8 @@ public class CharacterBattle : MonoBehaviour
     Action onAttackComplete;
     private bool isDamageAOE = false;
     public enum AttackType { Range, Melee}
-    public int positionNumber;
+    [Tooltip("0-2. The position this character occupies on the battlefield.")]
+    [SerializeField] public int positionNumber;
     [SerializeField] public int currentLevel = 0;
 
     public float clickDelta = 0.35f;  // Max between two click to be considered a double click
@@ -233,10 +234,13 @@ public class CharacterBattle : MonoBehaviour
                 bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
                 bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
                 targetCharacterBattle.Damage(this, currAttackDamage, missed, isCrit);
-            }, () =>  {
-                // Attack completed, slide back
                 Invoke("AttackDone", 1f);
+
             });
+            //, () =>  {
+            //    // Attack completed, slide back
+            //    //Invoke("AttackDone", 1f);
+            //});
         });
     }
 
