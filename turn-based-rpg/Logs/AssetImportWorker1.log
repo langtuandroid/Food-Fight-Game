@@ -2186,3 +2186,443 @@ Total: 3.151386 ms (FindLiveObjects: 0.404628 ms CreateObjectMapping: 0.166334 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009787 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.163 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 337.4 MB.
+System memory in use after: 337.7 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4259.
+Total: 3.117074 ms (FindLiveObjects: 0.468930 ms CreateObjectMapping: 0.152775 ms MarkObjects: 2.472952 ms  DeleteObjects: 0.021281 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 72120.591412 seconds.
+  path: Assets/Prefabs/Scenes
+  artifactKey: Guid(90e6650ff63104c5aa46759ebb5968db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenes using Guid(90e6650ff63104c5aa46759ebb5968db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c8db79bbd24dcb610cc273e2d4d28c') in 0.177088 seconds
+  Import took 0.409697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.777361 seconds.
+  path: Assets/Prefabs/Scenes/Campains
+  artifactKey: Guid(39e9bf2c9674c4ab0a0cfadb0ea0ff31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenes/Campains using Guid(39e9bf2c9674c4ab0a0cfadb0ea0ff31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e71ad7308fe645545c3b5d0f6bd2ff') in 0.009610 seconds
+  Import took 0.020275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.529088 seconds.
+  path: Assets/Scenes/Battle Scenes/Battle2.unity
+  artifactKey: Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Scenes/Battle2.unity using Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8ee65b34db4bb69a58f3d7a2207b5d') in 0.198662 seconds
+  Import took 0.209713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.910210 seconds.
+  path: Assets/Prefabs/Characters/Neptune.prefab
+  artifactKey: Guid(27b97e87425f74b4894a8a15e8a807dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Neptune.prefab using Guid(27b97e87425f74b4894a8a15e8a807dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26319e51be512e3ce3645adae336066') in 0.317466 seconds
+  Import took 0.327934 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.647 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 337.7 MB.
+System memory in use after: 338.0 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4264.
+Total: 7.521029 ms (FindLiveObjects: 1.511718 ms CreateObjectMapping: 0.510355 ms MarkObjects: 5.463592 ms  DeleteObjects: 0.032182 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009433 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.863 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.0 MB.
+System memory in use after: 338.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4268.
+Total: 3.854386 ms (FindLiveObjects: 0.870631 ms CreateObjectMapping: 0.296694 ms MarkObjects: 2.662263 ms  DeleteObjects: 0.022775 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003468 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.215 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.2 MB.
+System memory in use after: 338.4 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4272.
+Total: 9.481502 ms (FindLiveObjects: 4.651491 ms CreateObjectMapping: 0.626936 ms MarkObjects: 4.175799 ms  DeleteObjects: 0.024420 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 623.081379 seconds.
+  path: Assets/Scenes/Battle Scenes/Battle Dev.unity
+  artifactKey: Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Scenes/Battle Dev.unity using Guid(4128137c06d454f6d96694548fdbadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b82a416fc34d470b0fb1285db95e6') in 0.021463 seconds
+  Import took 0.031372 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003523 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.938 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.4 MB.
+System memory in use after: 338.7 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4276.
+Total: 3.660113 ms (FindLiveObjects: 0.466014 ms CreateObjectMapping: 0.234883 ms MarkObjects: 2.925462 ms  DeleteObjects: 0.032603 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 570.386867 seconds.
+  path: Assets/Scenes/Battle Scenes/Battle2.unity
+  artifactKey: Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Scenes/Battle2.unity using Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f0ddcdabc71f2ab34e0f1c5f9792d9') in 0.045257 seconds
+  Import took 0.065918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007617 seconds.
+  path: Assets/Scenes/Battle Scenes/Battle2.unity
+  artifactKey: Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Battle Scenes/Battle2.unity using Guid(6ae0d5e00faee43c19d53e8cf6eee863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f0ddcdabc71f2ab34e0f1c5f9792d9') in 0.004577 seconds
+  Import took 0.015974 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004603 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.332 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.7 MB.
+System memory in use after: 338.9 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4280.
+Total: 3.843212 ms (FindLiveObjects: 0.413929 ms CreateObjectMapping: 0.158639 ms MarkObjects: 3.237165 ms  DeleteObjects: 0.032227 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010832 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.050 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 6.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.9 MB.
+System memory in use after: 339.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4284.
+Total: 4.194296 ms (FindLiveObjects: 0.450516 ms CreateObjectMapping: 0.232751 ms MarkObjects: 3.485909 ms  DeleteObjects: 0.023939 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 7148.588714 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1
+  artifactKey: Guid(e83175f8d5cbd874197291051d314865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1 using Guid(e83175f8d5cbd874197291051d314865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac0c9adb2b5f33c880a11e0d089f072') in 0.011229 seconds
+  Import took 0.022798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006370 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1
+  artifactKey: Guid(e83175f8d5cbd874197291051d314865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1 using Guid(e83175f8d5cbd874197291051d314865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac0c9adb2b5f33c880a11e0d089f072') in 0.001422 seconds
+  Import took 0.012199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.123901 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down
+  artifactKey: Guid(5b50f09212dde9a49a8b8e311dfe31e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down using Guid(5b50f09212dde9a49a8b8e311dfe31e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b78c9b01dd55296e2c6627f3370b68') in 0.002827 seconds
+  Import took 0.012691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.926191 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 02.png
+  artifactKey: Guid(fc40e8bac7de4554c9529f810a31ede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 02.png using Guid(fc40e8bac7de4554c9529f810a31ede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781ec48a7ab88e92b4a44d591f5a814c') in 1.417032 seconds
+  Import took 1.424496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 04.png
+  artifactKey: Guid(8bae5f672a0059c43a2e316aac797f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 04.png using Guid(8bae5f672a0059c43a2e316aac797f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6bea6884116cb9b6f658030b842430') in 0.012444 seconds
+  Import took 0.019367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.682407 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 06.png
+  artifactKey: Guid(fee8ffef439cc7c459490aa30b69a67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 06.png using Guid(fee8ffef439cc7c459490aa30b69a67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89bb628c23483ccac98ea231fd96409') in 0.034321 seconds
+  Import took 0.046567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.551079 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 07.png
+  artifactKey: Guid(26cd98e5dad91a248b8710ae6b6ca6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 07.png using Guid(26cd98e5dad91a248b8710ae6b6ca6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a8bdb57f75958e1abffc78968bbf28') in 0.022358 seconds
+  Import took 0.030792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.180042 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 01.png
+  artifactKey: Guid(a879eb7d26a9a354382d761016ebfd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 01.png using Guid(a879eb7d26a9a354382d761016ebfd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9393e9c681568dcb21998fb74edcfe') in 0.012666 seconds
+  Import took 0.023047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.125972 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 02.png
+  artifactKey: Guid(58567c672304b9647856e38b2ea1bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 02.png using Guid(58567c672304b9647856e38b2ea1bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a63edb4f2d490861c40578078bc55c') in 0.026038 seconds
+  Import took 0.034969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.114464 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 03.png
+  artifactKey: Guid(cce0ea11bd8a8dd4bb536cac81ce8654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 03.png using Guid(cce0ea11bd8a8dd4bb536cac81ce8654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a2db71f7aeccab22603484ba8007ea') in 0.039125 seconds
+  Import took 0.047997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097453 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 04.png
+  artifactKey: Guid(28190c257560aed47a39f131ca0ab042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 04.png using Guid(28190c257560aed47a39f131ca0ab042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6358ef9e7f325944ad7276553228c3') in 0.018379 seconds
+  Import took 0.026939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139808 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 05.png
+  artifactKey: Guid(28fd67d5de8adfb49a4afbfddad26c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 05.png using Guid(28fd67d5de8adfb49a4afbfddad26c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b78d8826d64284c1e940219ae64750') in 0.023095 seconds
+  Import took 0.033061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.104140 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 06.png
+  artifactKey: Guid(8f40277a399d0474cbb091f51c438d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Cast Character 1 06.png using Guid(8f40277a399d0474cbb091f51c438d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bd48cad6c5c82948d164069c89390a') in 0.037920 seconds
+  Import took 0.047610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097890 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 01.png
+  artifactKey: Guid(10c7acc3ec58adc40bd624a8edb7f889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 01.png using Guid(10c7acc3ec58adc40bd624a8edb7f889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd34994aa94e870651c3896491d8096c') in 0.017514 seconds
+  Import took 0.027992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.100564 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 02.png
+  artifactKey: Guid(6bb18c7665b94754cac730f3c110c85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 02.png using Guid(6bb18c7665b94754cac730f3c110c85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b2a141dc372371b76d3d981a48f107') in 0.017576 seconds
+  Import took 0.026624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139942 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 03.png
+  artifactKey: Guid(9a4ee08ffe2b092439d50945b4871ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 03.png using Guid(9a4ee08ffe2b092439d50945b4871ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fcd138efa739f02f122a3f9edc8db8') in 0.022657 seconds
+  Import took 0.033102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.132725 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 04.png
+  artifactKey: Guid(78f4161f8d0d88b41be6eba83b9b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 04.png using Guid(78f4161f8d0d88b41be6eba83b9b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc4ae0bae57bcc8b72fd67b56dc3c2c') in 0.023744 seconds
+  Import took 0.034999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.116377 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 05.png
+  artifactKey: Guid(c5378712286527f43b004bfa91f6baf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 05.png using Guid(c5378712286527f43b004bfa91f6baf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97032851c604aabcf679d7d4445cc002') in 0.018081 seconds
+  Import took 0.027923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146629 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 06.png
+  artifactKey: Guid(afccd5519cbcc9c4293a2456ce54edf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 06.png using Guid(afccd5519cbcc9c4293a2456ce54edf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7f9da8e44ec1454995635f66026adb') in 0.018383 seconds
+  Import took 0.027316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058505 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 07.png
+  artifactKey: Guid(fb247dc365ac77c46b85dabeada3ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 07.png using Guid(fb247dc365ac77c46b85dabeada3ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc4b458a865812e2aaf96a9c1d48c0d') in 0.019259 seconds
+  Import took 0.030458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097164 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 08.png
+  artifactKey: Guid(76211d6175af36241b16be48d57a1cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 08.png using Guid(76211d6175af36241b16be48d57a1cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4962d61f327eda4d2118bf68c1221f4') in 0.017072 seconds
+  Import took 0.027148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.103426 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 09.png
+  artifactKey: Guid(fb56d2fa74b615046a21a133a4882ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Die Character 1 09.png using Guid(fb56d2fa74b615046a21a133a4882ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e1baaf0adcf958cb10ca301b0e0fd') in 0.013079 seconds
+  Import took 0.023553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.093743 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Hurt Character 1 01.png
+  artifactKey: Guid(bd08dd04190e30442bd8b55667964f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Hurt Character 1 01.png using Guid(bd08dd04190e30442bd8b55667964f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d55e64ec66c2e8b67f8ed81c80c748') in 0.015162 seconds
+  Import took 0.025282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.451312 seconds.
+  path: Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 05.png
+  artifactKey: Guid(e890e59151469ff4f9fc044c7e67611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/2D Customizable Characters/Characters/Male/Sprites/Frames/Character 1/Down/Down Bow Character 1 05.png using Guid(e890e59151469ff4f9fc044c7e67611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8586ab58ed10271a3e78d1c4296026') in 0.016928 seconds
+  Import took 0.025064 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011066 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.859 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 2.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 343.7 MB.
+System memory in use after: 343.9 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4291.
+Total: 4.708780 ms (FindLiveObjects: 0.607440 ms CreateObjectMapping: 0.244591 ms MarkObjects: 3.819023 ms  DeleteObjects: 0.036026 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
