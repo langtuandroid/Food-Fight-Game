@@ -1,0 +1,2292 @@
+fileFormatVersion: 2
+guid: 300f0a3bb0d8b48c3a15f12dec651a43
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4122085464568002040
+    second: 1110_Cupcake_Idle00
+  - first:
+      213: 2975418013803290130
+    second: 1110_Cupcake_Idle01
+  - first:
+      213: -2859583156577768386
+    second: 1110_Cupcake_Idle02
+  - first:
+      213: 4830246890348997484
+    second: 1110_Cupcake_Idle03
+  - first:
+      213: 27007836909190940
+    second: 1110_Cupcake_Idle04
+  - first:
+      213: 6829772344529976223
+    second: 1110_Cupcake_Idle05
+  - first:
+      213: -884115485023457093
+    second: 1110_Cupcake_Idle06
+  - first:
+      213: -2275562714663756429
+    second: 1110_Cupcake_Idle07
+  - first:
+      213: -2081449480689768388
+    second: 1110_Cupcake_Idle08
+  - first:
+      213: -4113356175697966057
+    second: 1110_Cupcake_Idle09
+  - first:
+      213: 4187236905056401202
+    second: 1110_Cupcake_Idle10
+  - first:
+      213: -817317656354198215
+    second: 1110_Cupcake_Idle11
+  - first:
+      213: -5819052766356807458
+    second: 1110_Cupcake_Idle12
+  - first:
+      213: -8443096251722255691
+    second: 1110_Cupcake_Idle13
+  - first:
+      213: 6157361848676109014
+    second: 1110_Cupcake_Idle14
+  - first:
+      213: 6145286524830557178
+    second: 1110_Cupcake_Attack_100
+  - first:
+      213: -5933355134171899389
+    second: 1110_Cupcake_Attack_101
+  - first:
+      213: -2523878733954424293
+    second: 1110_Cupcake_Attack_102
+  - first:
+      213: -3400214387115959205
+    second: 1110_Cupcake_Attack_103
+  - first:
+      213: -1909302683742839714
+    second: 1110_Cupcake_Attack_104
+  - first:
+      213: 9103067666692171813
+    second: 1110_Cupcake_Attack_105
+  - first:
+      213: -6597119326041257553
+    second: 1110_Cupcake_Attack_106
+  - first:
+      213: -8626594250123514461
+    second: 1110_Cupcake_Attack_107
+  - first:
+      213: -1323894469678703526
+    second: 1110_Cupcake_Attack_108
+  - first:
+      213: -2390339699005292970
+    second: 1110_Cupcake_Attack_109
+  - first:
+      213: 7167749710442477241
+    second: 1110_Cupcake_Attack_110
+  - first:
+      213: -6975762460991150584
+    second: 1110_Cupcake_Attack_111
+  - first:
+      213: 2066087627140568436
+    second: 1110_Cupcake_Attack_112
+  - first:
+      213: 4736536039130400782
+    second: 1110_Cupcake_Attack_113
+  - first:
+      213: 5529099448254770233
+    second: 1110_Cupcake_Attack_114
+  - first:
+      213: -1641782231761479026
+    second: 1110_Cupcake_Attack_115
+  - first:
+      213: -7926263470348854249
+    second: 1110_Cupcake_Attack_116
+  - first:
+      213: 1241563858634325372
+    second: 1110_Cupcake_Attack_117
+  - first:
+      213: 7307661941371738449
+    second: 1110_Cupcake_Attack_118
+  - first:
+      213: -894886669613098184
+    second: 1110_Cupcake_Attack_119
+  - first:
+      213: -8030416743158130678
+    second: 1110_Cupcake_Attack_120
+  - first:
+      213: 7680437489466800971
+    second: 1110_Cupcake_Attack_121
+  - first:
+      213: -5024640676046180808
+    second: 1110_Cupcake_Attack_122
+  - first:
+      213: -8290040245031348603
+    second: 1110_Cupcake_Attack_123
+  - first:
+      213: -2105614911463794757
+    second: 1110_Cupcake_Attack_124
+  - first:
+      213: 3188927450068221921
+    second: 1110_Cupcake_Attack_125
+  - first:
+      213: 8736702582332105386
+    second: 1110_Cupcake_Attack_126
+  - first:
+      213: -1164524794721166106
+    second: 1110_Cupcake_Attack_127
+  - first:
+      213: -4159370599986372900
+    second: 1110_Cupcake_Attack_128
+  - first:
+      213: -8870748456547329019
+    second: 1110_Cupcake_Attack_129
+  - first:
+      213: 1271977270100300232
+    second: 1110_Cupcake_Attack_130
+  - first:
+      213: -6166169887429423517
+    second: 1110_Cupcake_Attack_131
+  - first:
+      213: 1313012854423901281
+    second: 1110_Cupcake_Attack_132
+  - first:
+      213: -5103139193536678877
+    second: 1110_Cupcake_DamageMajor00
+  - first:
+      213: -3861453463158189250
+    second: 1110_Cupcake_DamageMajor01
+  - first:
+      213: -1854421619650166902
+    second: 1110_Cupcake_DamageMajor02
+  - first:
+      213: -5082062994962805522
+    second: 1110_Cupcake_DamageMajor03
+  - first:
+      213: 6429697837535336510
+    second: 1110_Cupcake_DamageMajor04
+  - first:
+      213: -6028704922566388407
+    second: 1110_Cupcake_DamageMajor05
+  - first:
+      213: 947238150427253752
+    second: 1110_Cupcake_DamageMajor06
+  - first:
+      213: -3592280130161369321
+    second: 1110_Cupcake_DamageMajor07
+  - first:
+      213: -9133197049281025582
+    second: 1110_Cupcake_DamageMajor08
+  - first:
+      213: -1387795881010846751
+    second: 1110_Cupcake_DamageMajor09
+  - first:
+      213: -2727859610601244521
+    second: 1110_Cupcake_DamageMajor10
+  - first:
+      213: 8613718741095795229
+    second: 1110_Cupcake_DamageMajor11
+  - first:
+      213: 7300439345477183208
+    second: 1110_Cupcake_DamageMajor12
+  - first:
+      213: -6072768625142017955
+    second: 1110_Cupcake_DamageMajor13
+  - first:
+      213: -4265825064264268858
+    second: 1110_Cupcake_DamageMajor14
+  - first:
+      213: -4128144180185215914
+    second: 1110_Cupcake_DamageMajor15
+  - first:
+      213: -3947088345862419722
+    second: 1110_Cupcake_DamageMajor16
+  - first:
+      213: -2018171719915235738
+    second: 1110_Cupcake_DamageNormal00
+  - first:
+      213: -4772339406498874276
+    second: 1110_Cupcake_DamageNormal01
+  - first:
+      213: 6223502134580241707
+    second: 1110_Cupcake_DamageNormal02
+  - first:
+      213: 5641056527338969834
+    second: 1110_Cupcake_DamageNormal03
+  - first:
+      213: -7211376182907919913
+    second: 1110_Cupcake_DamageNormal04
+  - first:
+      213: -4647090992894520150
+    second: 1110_Cupcake_DamageNormal05
+  - first:
+      213: 565765010915797093
+    second: 1110_Cupcake_DamageNormal06
+  - first:
+      213: 2190504999815746100
+    second: 1110_Cupcake_DamageNormal07
+  - first:
+      213: 6191095634650680061
+    second: 1110_Cupcake_DamageNormal08
+  - first:
+      213: -4560483290265521960
+    second: 1110_Cupcake_DamageNormal09
+  - first:
+      213: 826296455211040293
+    second: 1110_Cupcake_DamageNormal10
+  - first:
+      213: -3250836527240845196
+    second: 1110_Cupcake_DamageNormal11
+  - first:
+      213: -1967019836505809154
+    second: 1110_Cupcake_DamageNormal12
+  - first:
+      213: 9038019874754803777
+    second: 1110_Cupcake_DamageNormal13
+  - first:
+      213: 7319711757525741254
+    second: 1110_Cupcake_DamageNormal14
+  - first:
+      213: 3156142967285179975
+    second: 1110_Cupcake_DamageNormal15
+  - first:
+      213: 7361051280624529503
+    second: 1110_Cupcake_DamageNormal16
+  - first:
+      213: 3683318320441636722
+    second: 1110_Cupcake_Defeat0
+  - first:
+      213: -4584162539819459206
+    second: 1110_Cupcake_Defeat1
+  - first:
+      213: -1923941582765448985
+    second: 1110_Cupcake_Defeat2
+  - first:
+      213: -2983175206110111977
+    second: 1110_Cupcake_Defeat3
+  - first:
+      213: 6214788495679431834
+    second: 1110_Cupcake_Defeat4
+  - first:
+      213: -6374230731728768768
+    second: 1110_Cupcake_Defeat5
+  - first:
+      213: -4117014120209873710
+    second: 1110_Cupcake_Defeat6
+  - first:
+      213: 6555083952034992587
+    second: 1110_Cupcake_Defeat7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_100
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1635
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af325830981784550800000000000000
+      internalID: 6145286524830557178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_101
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1635
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a917511fc78ada0800000000000000
+      internalID: -5933355134171899389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_102
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1635
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12eb7ed9a169fcd0800000000000000
+      internalID: -2523878733954424293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_103
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1639
+        width: 186
+        height: 203
+      alignment: 9
+      pivot: {x: 0.4623656, y: 0.50985223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cd7cfa70300d0d0800000000000000
+      internalID: -3400214387115959205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_104
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1245
+        width: 185
+        height: 195
+      alignment: 9
+      pivot: {x: 0.44324324, y: 0.525641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cdec6335bc085e0800000000000000
+      internalID: -1909302683742839714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_105
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1442
+        width: 190
+        height: 189
+      alignment: 9
+      pivot: {x: 0.4473684, y: 0.54232806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528e78f00d7945e70800000000000000
+      internalID: 9103067666692171813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_106
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1683
+        width: 192
+        height: 198
+      alignment: 9
+      pivot: {x: 0.46875, y: 0.52272725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9427e0de25274a0800000000000000
+      internalID: -6597119326041257553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_107
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1654
+        width: 197
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5076142, y: 0.4877451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ade5f33c3e284880800000000000000
+      internalID: -8626594250123514461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_108
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1633
+        width: 196
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5153061, y: 0.48029557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c52be7ef490ade0800000000000000
+      internalID: -1323894469678703526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_109
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1844
+        width: 200
+        height: 203
+      alignment: 9
+      pivot: {x: 0.52, y: 0.49014777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e764455bec3ded0800000000000000
+      internalID: -2390339699005292970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_110
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1860
+        width: 204
+        height: 187
+      alignment: 9
+      pivot: {x: 0.5441176, y: 0.53743315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b635d1a266f87360800000000000000
+      internalID: 7167749710442477241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_111
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1509
+        width: 212
+        height: 161
+      alignment: 9
+      pivot: {x: 0.5424528, y: 0.64285713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8062e1b300d113f90800000000000000
+      internalID: -6975762460991150584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_112
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1672
+        width: 212
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5424528, y: 0.6371951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4751b8210c73cac10800000000000000
+      internalID: 2066087627140568436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_113
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1883
+        width: 196
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5255102, y: 0.63109756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08043eae6e8bb140800000000000000
+      internalID: 4736536039130400782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_114
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2
+        width: 171
+        height: 168
+      alignment: 9
+      pivot: {x: 0.4619883, y: 0.61011904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ca80d57ae4bbc40800000000000000
+      internalID: 5529099448254770233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_115
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 168
+        height: 169
+      alignment: 9
+      pivot: {x: 0.45238096, y: 0.61242604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a1f4d32c73739e0800000000000000
+      internalID: -1641782231761479026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_116
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 173
+        height: 169
+      alignment: 9
+      pivot: {x: 0.4682081, y: 0.61242604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c93bd6e51400290800000000000000
+      internalID: -7926263470348854249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_117
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 484
+        width: 169
+        height: 168
+      alignment: 9
+      pivot: {x: 0.4556213, y: 0.61011904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dbcd750cbea3110800000000000000
+      internalID: 1241563858634325372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_118
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 314
+        width: 169
+        height: 168
+      alignment: 9
+      pivot: {x: 0.4556213, y: 0.61011904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1599a1a61d70a6560800000000000000
+      internalID: 7307661941371738449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_119
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 830
+        width: 172
+        height: 170
+      alignment: 9
+      pivot: {x: 0.44767442, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b9a77b059b493f0800000000000000
+      internalID: -894886669613098184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_120
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 693
+        width: 172
+        height: 170
+      alignment: 9
+      pivot: {x: 0.44767442, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08d5b1e48a3e8090800000000000000
+      internalID: -8030416743158130678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_121
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 670
+        width: 172
+        height: 170
+      alignment: 9
+      pivot: {x: 0.44767442, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bf2473435669a60800000000000000
+      internalID: 7680437489466800971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_122
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 654
+        width: 172
+        height: 170
+      alignment: 9
+      pivot: {x: 0.44767442, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ee9444de3e44ab0800000000000000
+      internalID: -5024640676046180808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_123
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1457
+        width: 190
+        height: 172
+      alignment: 9
+      pivot: {x: 0.40526316, y: 0.5959302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586d635d15cd3fc80800000000000000
+      internalID: -8290040245031348603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_124
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 846
+        width: 177
+        height: 171
+      alignment: 9
+      pivot: {x: 0.43502825, y: 0.5994152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb75f60e46a57c2e0800000000000000
+      internalID: -2105614911463794757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_125
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 846
+        width: 177
+        height: 170
+      alignment: 9
+      pivot: {x: 0.43502825, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1effec3ce98514c20800000000000000
+      internalID: 3188927450068221921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_126
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 93
+        width: 172
+        height: 170
+      alignment: 9
+      pivot: {x: 0.44767442, y: 0.60294116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2a428a5b00f3970800000000000000
+      internalID: 8736702582332105386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_127
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 265
+        width: 169
+        height: 173
+      alignment: 9
+      pivot: {x: 0.4556213, y: 0.59248555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec928e7ed6c6dfe0800000000000000
+      internalID: -1164524794721166106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_128
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 440
+        width: 171
+        height: 176
+      alignment: 9
+      pivot: {x: 0.4502924, y: 0.5823864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdedb920a72f646c0800000000000000
+      internalID: -4159370599986372900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_129
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 144
+        width: 169
+        height: 168
+      alignment: 9
+      pivot: {x: 0.4556213, y: 0.61011904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cd6ab2745c4e480800000000000000
+      internalID: -8870748456547329019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_130
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 842
+        width: 173
+        height: 183
+      alignment: 9
+      pivot: {x: 0.46242774, y: 0.57103825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c113b28698f6a110800000000000000
+      internalID: 1271977270100300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_131
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1258
+        width: 188
+        height: 197
+      alignment: 9
+      pivot: {x: 0.4787234, y: 0.52538073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e0f0b382d5d6aa0800000000000000
+      internalID: -6166169887429423517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Attack_132
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1635
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16455750c32c83210800000000000000
+      internalID: 1313012854423901281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor00
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1475
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3247fd9e0f10e29b0800000000000000
+      internalID: -5103139193536678877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 806
+        width: 183
+        height: 207
+      alignment: 9
+      pivot: {x: 0.45355192, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3311cbb88c596ac0800000000000000
+      internalID: -3861453463158189250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor02
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1427
+        width: 181
+        height: 210
+      alignment: 9
+      pivot: {x: 0.46961325, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f72f0bc55c346e0800000000000000
+      internalID: -1854421619650166902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor03
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1019
+        width: 179
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5027933, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec851bc1a2e879b0800000000000000
+      internalID: -5082062994962805522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor04
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 195
+        width: 166
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5180723, y: 0.4952153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3814630e10ea3950800000000000000
+      internalID: 6429697837535336510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor05
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 1213
+        width: 179
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5139665, y: 0.4952153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94518ca70dcb55ca0800000000000000
+      internalID: -6028704922566388407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor06
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 406
+        width: 164
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5487805, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb1ae14414452d00800000000000000
+      internalID: 947238150427253752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor07
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 172
+        width: 171
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f990c1148a52ec0800000000000000
+      internalID: -3592280130161369321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor08
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 618
+        width: 173
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5086705, y: 0.4952153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d965f56cad504180800000000000000
+      internalID: -9133197049281025582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor09
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 254
+        width: 167
+        height: 210
+      alignment: 9
+      pivot: {x: 0.52095807, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e32993cffe8dbce0800000000000000
+      internalID: -1387795881010846751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 172
+        width: 172
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5290698, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7983af01322b42ad0800000000000000
+      internalID: -2727859610601244521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 595
+        width: 182
+        height: 209
+      alignment: 9
+      pivot: {x: 0.48351648, y: 0.4952153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ac32ebe831a8770800000000000000
+      internalID: 8613718741095795229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 466
+        width: 180
+        height: 210
+      alignment: 9
+      pivot: {x: 0.4611111, y: 0.49761903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6e373c7ee505560800000000000000
+      internalID: 7300439345477183208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor13
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1222
+        width: 181
+        height: 206
+      alignment: 9
+      pivot: {x: 0.45303866, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50d54f3c1139bba0800000000000000
+      internalID: -6072768625142017955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1092
+        width: 187
+        height: 208
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.50721157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3029294bebcc4c0800000000000000
+      internalID: -4265825064264268858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1050
+        width: 184
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46195653, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cc67e6db2e5b6c0800000000000000
+      internalID: -4128144180185215914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageMajor16
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1430
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa49cfdf002939c0800000000000000
+      internalID: -3947088345862419722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal00
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1844
+        width: 187
+        height: 203
+      alignment: 9
+      pivot: {x: 0.45989305, y: 0.50985223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66696b273830ef3e0800000000000000
+      internalID: -2018171719915235738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal01
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1002
+        width: 177
+        height: 209
+      alignment: 9
+      pivot: {x: 0.4519774, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c3900489e35cdb0800000000000000
+      internalID: -4772339406498874276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal02
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 826
+        width: 174
+        height: 204
+      alignment: 9
+      pivot: {x: 0.47126436, y: 0.5122549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b256a86c7325e5650800000000000000
+      internalID: 6223502134580241707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal03
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1
+        width: 168
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4702381, y: 0.5442708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea10f5260f094e40800000000000000
+      internalID: 5641056527338969834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal04
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 865
+        width: 173
+        height: 194
+      alignment: 9
+      pivot: {x: 0.48554912, y: 0.5438144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1af04b19b0ceb90800000000000000
+      internalID: -7211376182907919913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal05
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1230
+        width: 180
+        height: 195
+      alignment: 9
+      pivot: {x: 0.50555557, y: 0.54102564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4da910d57328fb0800000000000000
+      internalID: -4647090992894520150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal06
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1027
+        width: 176
+        height: 193
+      alignment: 9
+      pivot: {x: 0.48863637, y: 0.5466321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5682bf5a7400ad700800000000000000
+      internalID: 565765010915797093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal07
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1027
+        width: 176
+        height: 193
+      alignment: 9
+      pivot: {x: 0.48863637, y: 0.5466321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4321cb801bc366e10800000000000000
+      internalID: 2190504999815746100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal08
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1027
+        width: 176
+        height: 193
+      alignment: 9
+      pivot: {x: 0.48863637, y: 0.5466321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa43d98da03be550800000000000000
+      internalID: 6191095634650680061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal09
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1027
+        width: 176
+        height: 193
+      alignment: 9
+      pivot: {x: 0.48863637, y: 0.5466321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d07e972c98e5b0c0800000000000000
+      internalID: -4560483290265521960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal10
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1018
+        width: 179
+        height: 197
+      alignment: 9
+      pivot: {x: 0.49720672, y: 0.53045684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52eb4048f38977b00800000000000000
+      internalID: 826296455211040293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal11
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1061
+        width: 179
+        height: 202
+      alignment: 9
+      pivot: {x: 0.46927375, y: 0.5173267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478e1f2f665b2e2d0800000000000000
+      internalID: -3250836527240845196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal12
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1037
+        width: 183
+        height: 206
+      alignment: 9
+      pivot: {x: 0.45355192, y: 0.50728154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe9ce261edb3b4e0800000000000000
+      internalID: -1967019836505809154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal13
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1032
+        width: 181
+        height: 206
+      alignment: 9
+      pivot: {x: 0.45303866, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1483eabc03f7d6d70800000000000000
+      internalID: 9038019874754803777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1092
+        width: 187
+        height: 208
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.50721157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce629ddf07d49560800000000000000
+      internalID: 7319711757525741254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal15
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 884
+        width: 184
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46195653, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74661698e4fdccb20800000000000000
+      internalID: 3156142967285179975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_DamageNormal16
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1430
+        width: 185
+        height: 206
+      alignment: 9
+      pivot: {x: 0.46486485, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f503f03a325b72660800000000000000
+      internalID: 7361051280624529503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat0
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1838
+        width: 218
+        height: 209
+      alignment: 9
+      pivot: {x: 0.6284404, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277bc945f76cd1330800000000000000
+      internalID: 3683318320441636722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat1
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1838
+        width: 218
+        height: 209
+      alignment: 9
+      pivot: {x: 0.6284404, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d986d3578c160c0800000000000000
+      internalID: -4584162539819459206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1631
+        width: 217
+        height: 209
+      alignment: 9
+      pivot: {x: 0.60368663, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0a9aee259cc45e0800000000000000
+      internalID: -1923941582765448985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1430
+        width: 210
+        height: 200
+      alignment: 9
+      pivot: {x: 0.55714285, y: 0.4725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717dd01a4f1a996d0800000000000000
+      internalID: -2983175206110111977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1632
+        width: 228
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5701754, y: 0.49278846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94282f953d5f3650800000000000000
+      internalID: 6214788495679431834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat5
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1842
+        width: 223
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5605381, y: 0.48536587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001bdeeebee2a87a0800000000000000
+      internalID: -6374230731728768768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1842
+        width: 243
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5802469, y: 0.48536587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d48f95787d6dd6c0800000000000000
+      internalID: -4117014120209873710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Defeat7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1838
+        width: 230
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5565217, y: 0.5047847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1d8e1cf1658fa50800000000000000
+      internalID: 6555083952034992587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1224
+        width: 188
+        height: 204
+      alignment: 9
+      pivot: {x: 0.44680852, y: 0.51715684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a8f961c196bc6c0800000000000000
+      internalID: -4122085464568002040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle01
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1638
+        width: 191
+        height: 204
+      alignment: 9
+      pivot: {x: 0.45549738, y: 0.51715684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e1b0b4beeca4920800000000000000
+      internalID: 2975418013803290130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle02
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1240
+        width: 185
+        height: 205
+      alignment: 9
+      pivot: {x: 0.44864866, y: 0.51463413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ced721548b058d0800000000000000
+      internalID: -2859583156577768386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle03
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 829
+        width: 181
+        height: 206
+      alignment: 9
+      pivot: {x: 0.43093923, y: 0.5121359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6befac74fb780340800000000000000
+      internalID: 4830246890348997484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle04
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1302
+        width: 189
+        height: 205
+      alignment: 9
+      pivot: {x: 0.45502645, y: 0.5097561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fbf1d0c73ff5000800000000000000
+      internalID: 27007836909190940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle05
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1424
+        width: 181
+        height: 209
+      alignment: 9
+      pivot: {x: 0.44751382, y: 0.5047847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bfe7cf2c938ce50800000000000000
+      internalID: 6829772344529976223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1015
+        width: 187
+        height: 207
+      alignment: 9
+      pivot: {x: 0.46524063, y: 0.5048309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb031ce86adfab3f0800000000000000
+      internalID: -884115485023457093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle07
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1265
+        width: 181
+        height: 208
+      alignment: 9
+      pivot: {x: 0.44198895, y: 0.50240386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dd75874c39b60e0800000000000000
+      internalID: -2275562714663756429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle08
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 634
+        width: 181
+        height: 206
+      alignment: 9
+      pivot: {x: 0.45303866, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38a09da9b43d13e0800000000000000
+      internalID: -2081449480689768388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle09
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 384
+        width: 180
+        height: 209
+      alignment: 9
+      pivot: {x: 0.45555556, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c0dd80a5c6ae6c0800000000000000
+      internalID: -4113356175697966057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle10
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1217
+        width: 180
+        height: 208
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.49759614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237fa4cb7cd0c1a30800000000000000
+      internalID: 4187236905056401202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 842
+        width: 183
+        height: 206
+      alignment: 9
+      pivot: {x: 0.44262296, y: 0.50728154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d6a500ced48a4f0800000000000000
+      internalID: -817317656354198215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle12
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1447
+        width: 190
+        height: 205
+      alignment: 9
+      pivot: {x: 0.45789474, y: 0.50487804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed06c04f6529e3fa0800000000000000
+      internalID: -5819052766356807458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 678
+        width: 183
+        height: 204
+      alignment: 9
+      pivot: {x: 0.431694, y: 0.51715684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2b9a741b814da80800000000000000
+      internalID: -8443096251722255691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1110_Cupcake_Idle14
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 1843
+        width: 192
+        height: 204
+      alignment: 9
+      pivot: {x: 0.453125, y: 0.51715684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dac1ef6af7537550800000000000000
+      internalID: 6157361848676109014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

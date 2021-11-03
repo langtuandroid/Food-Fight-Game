@@ -17,12 +17,14 @@ public class Character_Base : MonoBehaviour {
     private AnimatedWalker animatedWalker;
     private UnitAnimType attackUnitAnim;
     private Color materialTintColor;
+    private Animator animator;
 
     private UnityAction AttackAniDone;
     //public UnityAction<Vector3> OnShootProjectile;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         //Transform bodyTransform = transform.Find("Body");
         //transform.Find("Body").GetComponent<MeshRenderer>().material = new Material(GetMaterial());
         //unitSkeleton = new V_UnitSkeleton(1f, bodyTransform.TransformPoint, (Mesh mesh) => bodyTransform.GetComponent<MeshFilter>().mesh = mesh);
@@ -109,15 +111,26 @@ public class Character_Base : MonoBehaviour {
     // Keith 
 
     //public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit, Action onComplete)
-    public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit)
+    //public void PlayAnimAttack(CharacterBattle attacker, CharacterBattle target, Action onHit)
+    public void PlayAnimAttack(AttackParameters attackParams)
     {
 
-        if (attacker.GetAttackType() == CharacterBattle.AttackType.Range)
+        if (attackParams.attacker.GetAttackType() == CharacterBattle.AttackType.Range)
         {
             print("Play Shoot!");
             if(shoot_as) shoot_as.Play();
             ProjectileManager projectileManager = GetComponent<ProjectileManager>();
-            projectileManager.ShootProjectile(attacker, target, onHit);
+            projectileManager.ShootProjectile(attackParams.attacker, attackParams.target, attackParams.onHit);
+            animator.SetTrigger("Attack");
+        }
+        else if (attackParams.attacker.GetAttackType() == CharacterBattle.AttackType.RangeMagic)
+        {
+            print("DO MAGIC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            if (shoot_as) shoot_as.Play();
+            animator.SetTrigger("Attack");
+            // instantiate spawing above target
+            MagicManager magicManager = GetComponent<MagicManager>();
+            magicManager.SpawnYummie(attackParams.attacker, attackParams.target, attackParams.onHit);
         }
         else
         {
@@ -125,13 +138,13 @@ public class Character_Base : MonoBehaviour {
 
         }
         print("PlayAnimAttack");
-        if (onHit != null && attacker.GetAttackType() == CharacterBattle.AttackType.Melee)
+        if (attackParams.onHit != null && attackParams.attacker.GetAttackType() == CharacterBattle.AttackType.Melee)
         {
             // The animation is at it's hit point, like throwing punch. (could happen multiple times)
             // this is for melee. Range attacks should call this when the projectile hits the target.
             if (shoot_as) shoot_as.Play();
 
-            onHit();
+            attackParams.onHit();
         } 
         //unitAnimation.PlayAnimForced(attackUnitAnim, attackDir, 1f, (UnitAnim unitAnim) =>
         //{

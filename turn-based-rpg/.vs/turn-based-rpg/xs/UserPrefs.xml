@@ -1,40 +1,25 @@
 ﻿<Properties StartupConfiguration="{18A39117-D33F-104D-7632-0FBE2C9581A2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/BattleOverWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/CharacterBattle.cs">
     <Files>
-      <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="294" Column="1" />
-      <File FileName="Assets/Scripts/Core/EnemyAI.cs" Line="58" Column="115" />
-      <File FileName="Assets/Scripts/Core/Character_Base.cs" Line="161" Column="12" />
-      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" Line="239" Column="16" />
-      <File FileName="Assets/Scripts/Core/ProjectileManager.cs" Line="18" Column="32" />
+      <File FileName="Assets/Scripts/Core/Projectile.cs" Line="12" Column="5" />
+      <File FileName="Assets/Scripts/Core/BattleHandler.cs" Line="135" Column="1" />
+      <File FileName="Assets/Scripts/Core/EnemyAI.cs" />
+      <File FileName="Assets/Scripts/Core/Character_Base.cs" Line="127" Column="1" />
+      <File FileName="Assets/Scripts/Core/CharacterBattle.cs" Line="213" Column="90" />
+      <File FileName="Assets/Scripts/Core/ProjectileManager.cs" Line="11" Column="5" />
       <File FileName="Assets/AssetPacks/2D Customizable Characters/Common/Scripts/SimpleCharacterController.cs" />
-      <File FileName="Assets/Viking Crew Tools/UI/SpeechBubbleManager/SpeechBubbleManager.cs" />
-      <File FileName="Assets/Scripts/Core/SpecialPowerManager.cs" Line="52" Column="44" />
-      <File FileName="Assets/Scripts/Core/AttackButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Core/BattleOverWindow.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/Core/SpecialPowerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Core/LaunchingProjectile.cs" Line="82" Column="24" />
+      <File FileName="Assets/Scripts/Core/MagicManager.cs" Line="31" Column="99" />
+      <File FileName="Assets/Scripts/Core/DroppableYummy.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/Core/DropYummy.cs" Line="10" Column="32" />
+      <File FileName="Assets/Scripts/Test.cs" Line="10" Column="23" />
+      <File FileName="Assets/Scripts/Core/AttackParameters.cs" Line="8" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="turn-based-rpg" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Core" expanded="True">
-                  <Node name="BattleOverWindow.cs" selected="True" />
-                </Node>
-                <Node name="Utility" expanded="True" />
-              </Node>
-              <Node name="TurnBattleSystem" expanded="True">
-                <Node name="DamagePopups" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c31d7d55-eae9-4e5c-9269-a46dc9dbf5d4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9931b9cc-2199-42b3-9300-4a991c53168f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

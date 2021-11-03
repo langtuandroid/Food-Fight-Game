@@ -32,16 +32,18 @@ public class CharacterBattle : MonoBehaviour
     Vector3 attackDir;
     Action onAttackComplete;
     private bool isDamageAOE = false;
-    public enum AttackType { Range, Melee}
+    public enum AttackType { Range, Melee, RangeMagic}
     [Tooltip("0-2. The position this character occupies on the battlefield.")]
     [SerializeField] public int positionNumber;
     [SerializeField] public int currentLevel = 0;
+    [SerializeField] private Transform aboveCharPoint;
 
     public float clickDelta = 0.35f;  // Max between two click to be considered a double click
     private bool click = false;
     private float clickTime;
 
     private float currAttackDamage = 50f;
+    private CharacterBattle currentTarget;
     [SerializeField] private float baseDamage = 10f;
     //[SerializeField] SpecialPowerManager.Lands homeLand;
 
@@ -199,6 +201,7 @@ public class CharacterBattle : MonoBehaviour
     public void Attack(BattleHandler.AttackTypes attackType, CharacterBattle targetCharacterBattle, float damage, Action onAttackComplete)
     {
         currAttackDamage = damage;
+        currentTarget = targetCharacterBattle;
         // What is my attack type?
         // if range go to middle of field
         // if melee go to target
@@ -209,7 +212,7 @@ public class CharacterBattle : MonoBehaviour
         this.onAttackComplete = onAttackComplete;
         float attackPos = charAttackType == AttackType.Range ? 4f : 2f;
         Vector3 slideTargetPosition;
-        if (charAttackType == AttackType.Range)
+        if (charAttackType == AttackType.Range || charAttackType == AttackType.RangeMagic)
         {
             // Range characters fight from a distance, so stay where you are.
             slideTargetPosition = GetPosition();
@@ -227,21 +230,40 @@ public class CharacterBattle : MonoBehaviour
             state = State.Busy;
 
             attackDir = (targetCharacterBattle.GetPosition() - GetPosition()).normalized;
-            characterBase.PlayAnimAttack(this, targetCharacterBattle,() => {
-                // Attack animation has caused damage. (could happen multiple times)
-                //int ranNum = UnityEngine.Random.Range(0, 3);
-                //bool missed = UnityEngine.Random.value < 0.50f ? true : false;
-                bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
-                bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
-                targetCharacterBattle.Damage(this, currAttackDamage, missed, isCrit);
-                Invoke("AttackDone", 1f);
 
+            bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
+            bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
+
+            AttackParameters attackParameters = new AttackParameters()
+            { attacker=this, target=currentTarget, crit=isCrit, missed=missed, damage=currAttackDamage, onHit=AttackCallBack};
+            characterBase.PlayAnimAttack(attackParameters);
+                /*
+                characterBase.PlayAnimAttack(this, targetCharacterBattle,() => {
+                    // Attack animation has caused damage. (could happen multiple times)
+                    //int ranNum = UnityEngine.Random.Range(0, 3);
+                    //bool missed = UnityEngine.Random.value < 0.50f ? true : false;
+
+
+                    bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
+                    bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
+                    targetCharacterBattle.Damage(this, currAttackDamage, missed, isCrit);
+                    Invoke("AttackDone", 1f);
+
+                });
+                */
+                //, () =>  {
+                //    // Attack completed, slide back
+                //    //Invoke("AttackDone", 1f);
+                //});
             });
-            //, () =>  {
-            //    // Attack completed, slide back
-            //    //Invoke("AttackDone", 1f);
-            //});
-        });
+    }
+
+    private void AttackCallBack()
+    {
+        bool missed = KG_Utils.ProbabilityCheck(chanceOfMiss);
+        bool isCrit = KG_Utils.ProbabilityCheck(chanceOfCrit);
+        currentTarget.Damage(this, currAttackDamage, missed, isCrit);
+        Invoke("AttackDone", 1f);
     }
 
     private void AttackDone()
@@ -304,6 +326,11 @@ public class CharacterBattle : MonoBehaviour
     public float GetHealthAmount()
     {
        return healthSystem.GetHealthAmount();
+    }
+
+    public Vector3 GetAboveCharPoint()
+    {
+        return aboveCharPoint.position;
     }
 
 }

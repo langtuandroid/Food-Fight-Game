@@ -1297,7 +1297,7 @@ MonoBehaviour:
   playerDeck:
   - {fileID: 2901251352118370649, guid: c2dfaf70fb3924057b96c6a2fd88e4ab, type: 3}
   - {fileID: 7846718967427300910, guid: 76669488c740c449c8e75c7ef3f43980, type: 3}
-  - {fileID: 3074927930917860047, guid: 7bf01be0d9b8c4df28e2038fac8b6e34, type: 3}
+  - {fileID: 4363901598677470455, guid: 92a9c8ef94d3a4f2db40452a1f95567f, type: 3}
   enemyAI: {fileID: 985680072}
   SelectAttackTypeWin_pf: {fileID: 6818618966472499543, guid: 341f69126257e48559351bdf919289d3,
     type: 3}

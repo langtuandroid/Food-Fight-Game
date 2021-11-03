@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
     protected Action OnHitAction;
     protected GameObject hit_ps;
     [SerializeField] protected AudioSource collisionSnd_as;
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     private Color spriteColor;
     private void Awake()
     {
@@ -39,16 +39,24 @@ public class Projectile : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Base Collision!!");
         
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
-            if(collisionSnd_as) collisionSnd_as.Play();
+            if (collisionSnd_as)
+            {
+                print("!!!!!!!!!!PLAY HIT SOUND");
+
+                collisionSnd_as.Play();
+            }
+            else
+            {
+                print("CANT PLAY HIT SOUND");
+            }
+
             if(hit_ps)
             {
                 Instantiate(hit_ps, collision.gameObject.transform.position, Quaternion.identity);
-
             }
             OnHitAction();
 

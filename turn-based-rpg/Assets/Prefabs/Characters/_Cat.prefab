@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2720383629812798458}
   - component: {fileID: 1836670475352320148}
   - component: {fileID: -7877014288048026522}
+  - component: {fileID: 5963113097579905099}
   m_Layer: 0
   m_Name: _Cat
   m_TagString: Untagged
@@ -206,8 +207,11 @@ MonoBehaviour:
   blinkFeedback: {fileID: 7945234542422449680}
   hurt_as: {fileID: 0}
   chanceOfMiss: 15
+  chanceOfCrit: 2
+  isPlayerTeam: 0
   positionNumber: 0
   currentLevel: 0
+  aboveCharPoint: {fileID: 9137799411975946529}
   clickDelta: 0.35
   baseDamage: 10
 --- !u!114 &1836670475352320148
@@ -295,6 +299,20 @@ MonoBehaviour:
   hit_ps: {fileID: 0}
   launchPoint: {fileID: 3536345931899898159}
   controlPoint: {fileID: 9137799411975946529}
+--- !u!114 &5963113097579905099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254694221753900549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c6d71bb5d98441a90615a760c076d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yummies_pf: []
+  hit_ps: {fileID: 0}
 --- !u!1 &1655981067144730159
 GameObject:
   m_ObjectHideFlags: 0

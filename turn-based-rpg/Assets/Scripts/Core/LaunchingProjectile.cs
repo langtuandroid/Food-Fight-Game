@@ -14,7 +14,7 @@ public class LaunchingProjectile : Projectile
     private Vector2 p0,p1,p2,p3;
     private BattleHandler battleHandler;
     private List<CharacterBattle> enemyTeam;
-    private SpriteRenderer spriteRenderer;
+    //protected override SpriteRenderer spriteRenderer;
     private Color spriteColor;
     //private GameObject hit_ps;
 
@@ -70,9 +70,14 @@ public class LaunchingProjectile : Projectile
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
 
+        //Keith for some reason on the new battle scene, this is not working!
+        print("Hit Target-------------------");
+
+
         CharacterBattle characterBattle = collision.gameObject.GetComponent<CharacterBattle>();
         if (characterBattle == targetCharacterBattle)
         {
+            print("Launching projectile HIT");
             collisionSnd_as.Play();
             OnHitAction();
             //int c = 0;

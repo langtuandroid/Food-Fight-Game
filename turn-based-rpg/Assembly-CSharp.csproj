@@ -189,6 +189,11 @@
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/CodeMonkey/Utils/FunctionPeriodic.cs" />
     <Compile Include="Assets/Scripts/Utility/TimerClass.cs" />
     <Compile Include="Assets/TurnBattleSystem/_/Stuff/Scripts/Shoot_Flash.cs" />
+    <Compile Include="Assets/Scripts/Core/MagicManager.cs" />
+    <Compile Include="Assets/Scripts/Core/DroppableYummy.cs" />
+    <Compile Include="Assets/Scripts/Core/DropYummy.cs" />
+    <Compile Include="Assets/Scripts/Test.cs" />
+    <Compile Include="Assets/Scripts/Core/AttackParameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/VertexLitCG.shader" />
@@ -205,6 +210,7 @@
     <None Include="Assets/TopDownEngine/ThirdParty/MoreMountains/MMInterface/Common/Shaders/VerticalGradient.shader" />
     <None Include="Assets/TopDownEngine/license.txt" />
     <None Include="Assets/TurnBattleSystem/_/Stuff/Shaders/Endless_TransColor.shader" />
+    <None Include="Assets/codeandweb.com/Readme.txt" />
     <None Include="Assets/TopDownEngine/ThirdParty/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/TopDownEngine/ThirdParty/MoreMountains/InventoryEngine/readme.txt" />
     <None Include="Assets/TurnBattleSystem/_/Stuff/CodeMonkey/README.txt" />

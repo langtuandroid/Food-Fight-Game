@@ -103,6 +103,7 @@ public class BattleHandler : MonoBehaviour
 
     public void Attack(AttackTypes attackType)
     {
+        //TODO turn off all enemy colliders except activeEnemy
         float damage = activeCharacterBattle.GetBaseDamage();
         /*
          *Attacks have a chance to Miss. Ultimate attacks become more accurate the more turns that have taken 
@@ -147,6 +148,8 @@ public class BattleHandler : MonoBehaviour
         {            
             state = State.Busy;
             activeCharacterBattle.Attack(currentAttackType, activeEnemyCharacterBattle, damage, () => {
+
+                //ToDO turn on all enemy colliders back on
                 // Called when the attack is finished.                    
                 ChooseNextActiveCharacter();
             });
