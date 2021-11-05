@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using MoreMountains.Feedbacks;
 
 public class DroppableYummy : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class DroppableYummy : MonoBehaviour
     private Action OnHitAction;
     private GameObject hit_ps;
     [SerializeField] protected AudioSource collisionSnd_as;
+    [SerializeField] MMFeedbacks scaleFeedBack;
 
+    private void Start()
+    {
+        scaleFeedBack.PlayFeedbacks();
+    }
 
     public void Setup(CharacterBattle attacker, GameObject hit_ps, CharacterBattle target, Action onHit)
     {

@@ -69,43 +69,44 @@ public class Character_Base : MonoBehaviour {
 
     public void PlayAnimMove(Vector3 moveDir)
     {
-        print("PlayAnimMove");
+        //print("PlayAnimMove");
 
         //animatedWalker.SetMoveVector(moveDir);
     }
 
     public void PlayAnimIdle()
     {
-        print("PlayAnimIdle");
+        //print("PlayAnimIdle");
 
         //animatedWalker.SetMoveVector(Vector3.zero);
     }
 
     public void PlayAnimIdle(Vector3 animDir)
     {
-        print("PlayAnimIdle");
+        //print("PlayAnimIdle");
 
         //animatedWalker.PlayIdleAnim(animDir);
     }
 
     public void PlayAnimSlideRight()
     {
-        print("PlayAnimSlideRight");
+        //print("PlayAnimSlideRight");
 
         //unitAnimation.PlayAnimForced(UnitAnim.GetUnitAnim("dBareHands_SlideRight"), 1f, null);
     }
 
     public void PlayAnimSlideLeft()
     {
-        print("PlayAnimSlideLeft");
+        //print("PlayAnimSlideLeft");
 
         //unitAnimation.PlayAnimForced(UnitAnim.GetUnitAnim("dBareHands_SlideLeft"), 1f, null);
     }
 
-    public void PlayAnimLyingUp()
+    public void PlayDefeatAnim()
     {
-        print("PlayAnimLyingUp");
-        //unitAnimation.PlayAnimForced(UnitAnim.GetUnitAnim("LyingUp"), 1f, null);
+        //print("PlayAnimLyingUp");
+        animator.SetTrigger("Defeat");
+
     }
 
     // Keith 
@@ -117,7 +118,6 @@ public class Character_Base : MonoBehaviour {
 
         if (attackParams.attacker.GetAttackType() == CharacterBattle.AttackType.Range)
         {
-            print("Play Shoot!");
             if(shoot_as) shoot_as.Play();
             ProjectileManager projectileManager = GetComponent<ProjectileManager>();
             projectileManager.ShootProjectile(attackParams.attacker, attackParams.target, attackParams.onHit);
@@ -125,7 +125,6 @@ public class Character_Base : MonoBehaviour {
         }
         else if (attackParams.attacker.GetAttackType() == CharacterBattle.AttackType.RangeMagic)
         {
-            print("DO MAGIC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             if (shoot_as) shoot_as.Play();
             animator.SetTrigger("Attack");
             // instantiate spawing above target
@@ -175,6 +174,11 @@ public class Character_Base : MonoBehaviour {
 
     }
 
+    public void PlayTakeNormalDamage()
+    {
+        animator.SetTrigger("NormalDamage");
+    }
+
     public void SetAnimsBareHands()
     {
         print("SetAnimsBareHands");
@@ -185,7 +189,7 @@ public class Character_Base : MonoBehaviour {
 
     public void SetAnimsSwordTwoHandedBack()
     {
-        print("SetAnimsSwordTwoHandedBack");
+        //print("SetAnimsSwordTwoHandedBack");
 
         //animatedWalker.SetAnimations(UnitAnimType.GetUnitAnimType("dSwordTwoHandedBack_Idle"), UnitAnimType.GetUnitAnimType("dSwordTwoHandedBack_Walk"), 1f, 1f);
         //attackUnitAnim = UnitAnimType.GetUnitAnimType("dSwordTwoHandedBack_Sword");
@@ -193,8 +197,7 @@ public class Character_Base : MonoBehaviour {
 
     public void SetAnimsSwordShield()
     {
-        print("SetAnimsSwordShield");
-
+        //print("SetAnimsSwordShield");
         //animatedWalker.SetAnimations(UnitAnimType.GetUnitAnimType("dSwordShield_Idle"), UnitAnimType.GetUnitAnimType("dSwordShield_Walk"), 1f, 1f);
         //attackUnitAnim = UnitAnimType.GetUnitAnimType("dSwordShield_Attack");
     }

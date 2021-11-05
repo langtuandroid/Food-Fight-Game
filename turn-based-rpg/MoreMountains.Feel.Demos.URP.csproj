@@ -56,11 +56,11 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Feel/FeelDemosURP/Strike/Scripts/Strike.cs" />
-    <Compile Include="Assets/Feel/FeelDemosURP/Strike/Scripts/StrikeBall.cs" />
+    <Compile Include="Assets/AssetPacks/Feel/FeelDemosURP/Strike/Scripts/Strike.cs" />
+    <Compile Include="Assets/AssetPacks/Feel/FeelDemosURP/Strike/Scripts/StrikeBall.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Feel/FeelDemosURP/MoreMountains.Feel.Demos.URP.asmdef" />
+    <None Include="Assets/AssetPacks/Feel/FeelDemosURP/MoreMountains.Feel.Demos.URP.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

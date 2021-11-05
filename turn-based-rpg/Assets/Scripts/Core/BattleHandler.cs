@@ -14,6 +14,8 @@ public class BattleHandler : MonoBehaviour
 
     [SerializeField] Transform[] leftPositions;
     [SerializeField] Transform[] rightPositions;
+    [SerializeField] Transform[] LeftDefeatPositions;
+    [SerializeField] Transform[] rightDefeatPositions;
     [SerializeField] private Transform pfCharacter;
     [SerializeField] GameObject[] playerDeck;
     [SerializeField] EnemyAI enemyAI;
@@ -32,7 +34,6 @@ public class BattleHandler : MonoBehaviour
     private int enemyBattleIndex = 0;
     private AttackTypes currentAttackType;
     private bool isPlayerTurn = true;
-    //private SelectAttackTypeWin selectAttackTypeWin;
 
     private int specialAttacksLeft = 5;
     private int ultimateAttacksLeft = 1;
@@ -53,8 +54,6 @@ public class BattleHandler : MonoBehaviour
         instance = this;
         currentAttackType = AttackTypes.Basic;
         specialPowerManager = GetComponent<SpecialPowerManager>();
-        //float dmg = specialPowerManager.GetSpecialAttackMultiplier(SpecialPowerManager.Lands.Aves_City, SpecialPowerManager.Lands.Irk_Gardens);
-        //print("Multiplier = " + dmg); 
     }
 
     private void Start()
@@ -62,9 +61,11 @@ public class BattleHandler : MonoBehaviour
         playerCharacterBattles  = new List<CharacterBattle>();
         enemyCharacterBattles   = new List<CharacterBattle>();
 
-        playerCharacterBattles.Add( SpawnCharacter(playerDeck[0], true, leftPositions[0].position, 0) );
-        playerCharacterBattles.Add( SpawnCharacter(playerDeck[1], true, leftPositions[1].position, 1) );
-        playerCharacterBattles.Add( SpawnCharacter(playerDeck[2], true, leftPositions[2].position, 2) );
+        // Keith create arrays of defeatOffScreenPositions and pass it to spawnCharacter
+
+        playerCharacterBattles.Add( SpawnCharacter(playerDeck[0], true, leftPositions[0].position, LeftDefeatPositions[0].position, 0) );
+        playerCharacterBattles.Add( SpawnCharacter(playerDeck[1], true, leftPositions[1].position, LeftDefeatPositions[1].position, 1) );
+        playerCharacterBattles.Add( SpawnCharacter(playerDeck[2], true, leftPositions[2].position, LeftDefeatPositions[2].position, 2) );
 
         enemyCharacterBattles = enemyAI.InitAI(playerCharacterBattles);
 
@@ -72,7 +73,6 @@ public class BattleHandler : MonoBehaviour
         for (int i = 0; i < playerCharacterBattles.Count; i++)
         {
             playerCharacterBattles[i].CharacterSelected += CharacterSelected;
-            //playerCharacterBattles[i].CharacterDoubleClicked += ShowSelectAttackTypeWin;
         }
         print("characterbattles " + enemyCharacterBattles.Count);
         for (int j = 0; j < enemyCharacterBattles.Count; j++)
@@ -103,7 +103,7 @@ public class BattleHandler : MonoBehaviour
 
     public void Attack(AttackTypes attackType)
     {
-        //TODO turn off all enemy colliders except activeEnemy
+        TurnOffOtherEnemyColliders(activeEnemyCharacterBattle);
         float damage = activeCharacterBattle.GetBaseDamage();
         /*
          *Attacks have a chance to Miss. Ultimate attacks become more accurate the more turns that have taken 
@@ -120,9 +120,7 @@ public class BattleHandler : MonoBehaviour
             //damage. If the Ooonimal being attacked is neutral to the attacker, the attack does
             //the standard 1.0x damage. 
             currentAttackType = attackType;
-
             damage = CalculateDamage(activeCharacterBattle, activeEnemyCharacterBattle);
-
         }
 
         if (attackType == AttackTypes.ultimate && CheckUltimateAttackReady())
@@ -141,16 +139,13 @@ public class BattleHandler : MonoBehaviour
             //A Basic attack 
             currentAttackType = attackType;
         }
-
-
         
         if (state == State.WaitingForPlayer)
         {            
             state = State.Busy;
             activeCharacterBattle.Attack(currentAttackType, activeEnemyCharacterBattle, damage, () => {
-
-                //ToDO turn on all enemy colliders back on
-                // Called when the attack is finished.                    
+                // Called when the attack is finished.
+                TurnOnAllEnemyColliders();
                 ChooseNextActiveCharacter();
             });
         }
@@ -159,29 +154,22 @@ public class BattleHandler : MonoBehaviour
     public float CalculateDamage(CharacterBattle attacker, CharacterBattle target)
     {
         float multiplier = specialPowerManager.GetSpecialAttackMultiplier(attacker.GetLand(), target.GetLand());
-
-
-        print("CalculateDamage baseDmg=" + attacker.GetBaseDamage() + " " + multiplier);
         float damage = attacker.GetBaseDamage() * multiplier;
-
         // Stronger? Weaker? Neutral?
-
         return (damage);
     }
 
-
-    public CharacterBattle SpawnCharacter(GameObject character, bool isPlayerTeam, Vector3 pos, int posNum)
+    public CharacterBattle SpawnCharacter(GameObject character, bool isPlayerTeam, Vector3 pos, Vector3 defeatPos, int posNum)
     {
         Vector3 position                = pos;
         GameObject characterTransform   = Instantiate(character, position, Quaternion.identity);
         CharacterBattle characterBattle = characterTransform.GetComponent<CharacterBattle>();
-        characterBattle.Setup(isPlayerTeam, posNum);
+        characterBattle.Setup(isPlayerTeam, defeatPos, posNum);
         return characterBattle;
     }
 
     private void SetActiveCharacterBattle(CharacterBattle charaterBattle)
     {
-
         if (charaterBattle.IsPlayerTeam())
         {
             if (activeCharacterBattle !=null)
@@ -200,13 +188,7 @@ public class BattleHandler : MonoBehaviour
             activeEnemyCharacterBattle = charaterBattle;
             activeEnemyCharacterBattle.ShowSelectionCircle();
         }
-
     }
-
-    // roundnum + index
-
-
-
 
     // Keith at some point change this to UpdateTurn.
     private void ChooseNextActiveCharacter()
@@ -220,17 +202,11 @@ public class BattleHandler : MonoBehaviour
         ClearActiveCharacters();
         if (isPlayerTurn)
         {
-            //    SetActiveCharacterBattle(activeEnemyCharacterBattle);
-                state = State.Busy;
-            //    activeEnemyCharacterBattle.Attack(activeCharacterBattle, () => {
-            //        ChooseNextActiveCharacter();
-            //    });
-            
+             state = State.Busy;            
             enemyAI.UpdateTurn();
         }
         else
         {
-            //SetActiveCharacterBattle(activeCharacterBattle);
             state = State.WaitingForPlayer;
         }
         isPlayerTurn = !isPlayerTurn;
@@ -248,25 +224,11 @@ public class BattleHandler : MonoBehaviour
         }        
     }
 
-    //private void ShowSelectAttackTypeWin(CharacterBattle characterBattle)
-    //{
-    //    GameObject go = Instantiate(SelectAttackTypeWin_pf);
-    //    selectAttackTypeWin = go.GetComponent<SelectAttackTypeWin>();
-    //    selectAttackTypeWin.OnSelectionMade += AttackTypeSelected;
-    //    selectAttackTypeWin.OnWinClosed += SelectAttackTypeWinClosed;
-    //}
-
     // Called when you double click on a target.
     private void ShowTargetInfo(CharacterBattle characterBattle)
     {
         print("Show Target Info");
     }
-
-    //private void SelectAttackTypeWinClosed()
-    //{
-    //    selectAttackTypeWin.OnWinClosed -= SelectAttackTypeWinClosed;
-    //    selectAttackTypeWin = null;
-    //}
 
 
     private bool TestBattleOver()
@@ -311,14 +273,10 @@ public class BattleHandler : MonoBehaviour
         int minAttackLevel = 5;
         if (activeCharacterBattle.currentLevel >= minAttackLevel)
         {
-            print("Set attack to special!!!");
-            //selectAttackTypeWin.UdateDisplay("Set Attack to Special");
             return true;
         }
         else
         {
-
-            //selectAttackTypeWin.UdateDisplay("Character needs to be at least level "+minAttackLevel+" for this attack. "+ activeCharacterBattle.currentLevel);
             return false;
         }
     }
@@ -328,25 +286,36 @@ public class BattleHandler : MonoBehaviour
         int minAttackLevel = 10;
         if (activeCharacterBattle.currentLevel >= minAttackLevel)
         {
-            //selectAttackTypeWin.UdateDisplay("Set Attack to Ultimate");
             return true;
         }
         else
-        {
-            //selectAttackTypeWin.UdateDisplay("Character needs to be at least level " + minAttackLevel + " for this attack.");
+        {           
             return false;
         }
     }
 
-
-
     public void CharacterSelected(CharacterBattle characterBattle)
     {
-        //print("CharacterSelected "+characterBattle.IsPlayerTeam());
-        //if (characterBattle.IsPlayerTeam())
-        //{
-            SetActiveCharacterBattle(characterBattle);
-        //}
+        SetActiveCharacterBattle(characterBattle);
+    }
+
+    private void TurnOffOtherEnemyColliders(CharacterBattle target)
+    {
+        for (int i = 0; i < enemyCharacterBattles.Count; i++)
+        {
+            if (enemyCharacterBattles[i].gameObject != target.gameObject)
+            {
+                enemyCharacterBattles[i].TurnOffCollider();
+            }                      
+        }
+    }
+
+    private void TurnOnAllEnemyColliders()
+    {
+        for (int i = 0; i < enemyCharacterBattles.Count; i++)
+        {
+            enemyCharacterBattles[i].TurnOnCollider();            
+        }
     }
 
     public List<CharacterBattle> GetEnemyTeam()

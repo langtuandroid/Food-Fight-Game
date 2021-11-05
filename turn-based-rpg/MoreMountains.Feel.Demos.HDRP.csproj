@@ -56,10 +56,10 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs" />
+    <Compile Include="Assets/AssetPacks/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Feel/FeelDemosHDRP/MoreMountains.Feel.Demos.HDRP.asmdef" />
+    <None Include="Assets/AssetPacks/Feel/FeelDemosHDRP/MoreMountains.Feel.Demos.HDRP.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -23,6 +23,7 @@ public class CharacterBattle : MonoBehaviour
     int chanceOfCrit = 2;
 
     private Vector3 slideTargetPosition;
+    private Vector3 defeatedOffScreenPos;
     private Action onSlideComplete;
     [SerializeField] private bool isPlayerTeam;
     private GameObject selectionCircleGameObject;
@@ -41,6 +42,9 @@ public class CharacterBattle : MonoBehaviour
     public float clickDelta = 0.35f;  // Max between two click to be considered a double click
     private bool click = false;
     private float clickTime;
+    private Collider2D charCollider;
+    private float slideSpeed = 4f;
+    private float defeatRunSpeed = 1f;
 
     private float currAttackDamage = 50f;
     private CharacterBattle currentTarget;
@@ -53,12 +57,14 @@ public class CharacterBattle : MonoBehaviour
     {
         Idle,
         Sliding,
-        Busy
+        Busy,
+        Defeated
     }
 
     private void Awake()
     {
         characterBase = GetComponent<Character_Base>();
+        charCollider = GetComponent<Collider2D>();
         selectionCircleGameObject = transform.Find("SelectionCircle").gameObject;
         startingPosition = GetPosition();
         HideSelectionCircle();
@@ -83,10 +89,11 @@ public class CharacterBattle : MonoBehaviour
 
     }
 
-    public void Setup(bool isPlayerTeam, int positionNumber)
+    public void Setup(bool isPlayerTeam, Vector3 defeatPos, int positionNumber)
     {
         this.isPlayerTeam = isPlayerTeam;
         this.positionNumber = positionNumber;
+        this.defeatedOffScreenPos = defeatPos;
         currentLevel = 11;
         if (isPlayerTeam)
         {
@@ -136,7 +143,7 @@ public class CharacterBattle : MonoBehaviour
             case State.Busy:
                 break;
             case State.Sliding:
-                float slideSpeed = 4f;
+                //float slideSpeed = 4f;
                 transform.position += (slideTargetPosition - GetPosition()) * slideSpeed * Time.deltaTime;
 
                 float reachedDistance = 1f;
@@ -146,6 +153,11 @@ public class CharacterBattle : MonoBehaviour
                     transform.position = slideTargetPosition;
                     onSlideComplete();
                 }
+                break;
+            case State.Defeated:
+                
+                transform.position += (defeatedOffScreenPos - GetPosition()) * defeatRunSpeed * Time.deltaTime;
+
                 break;
             default:
                 break;
@@ -180,17 +192,27 @@ public class CharacterBattle : MonoBehaviour
         //Blood_Handler.SpawnBlood(GetPosition(), dirFromToAttacker);
         CodeMonkey.Utils.UtilsClass.ShakeCamera(.05f, .4f);
         blinkFeedback.PlayFeedbacks();
+        characterBase.PlayTakeNormalDamage();
+
         Invoke(nameof(DoHurt), .5f);
         if (healthSystem.IsDead())
         {
             //Died
-            characterBase.PlayAnimLyingUp();
+            Invoke(nameof(HandleDefeat), 1f);
         }
     }
 
     private void DoHurt()
     {
         if (hurt_as) hurt_as.Play();
+    }
+
+    private void HandleDefeat()
+    {
+        // Turn opposite direction run off screen
+
+        characterBase.PlayDefeatAnim();
+        state = State.Defeated;
     }
 
     public bool IsDead()
@@ -301,6 +323,16 @@ public class CharacterBattle : MonoBehaviour
     public void ShowSelectionCircle()
     {
         selectionCircleGameObject.SetActive(true);
+    }
+
+    public void TurnOffCollider()
+    {
+        charCollider.enabled = false;
+    }
+
+    public void TurnOnCollider()
+    {
+        charCollider.enabled = true;
     }
 
     public bool IsPlayerTeam()

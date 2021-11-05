@@ -806,10 +806,6 @@
       <Project>{C9B0F43D-826C-C750-0C71-30136EC3662B}</Project>
       <Name>MoreMountains.InventoryEngine.Demos</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
-      <Project>{4052907D-CEE5-B75C-8018-170AAF848DCB}</Project>
-      <Name>MoreMountains.NiceVibrations</Name>
-    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.csproj">
       <Project>{FEAB1018-353E-3530-19E8-B84C89933FCA}</Project>
       <Name>MoreMountains.Feedbacks</Name>
@@ -822,10 +818,6 @@
       <Project>{CFABC38A-180A-17A5-7F30-1201D2863D9F}</Project>
       <Name>MoreMountains.Feedbacks.PostProcessing</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
-      <Project>{5D3785C9-5A28-5663-E02E-E09836D12BAE}</Project>
-      <Name>MoreMountains.NiceVibrations.Demos</Name>
-    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.NiceVibrations.csproj">
       <Project>{1FE9E23C-F7A4-03A6-FADC-5071519A95C0}</Project>
       <Name>MoreMountains.Feedbacks.NiceVibrations</Name>
@@ -834,17 +826,9 @@
       <Project>{75C548EC-5840-2B33-0941-1F893E6BE2F1}</Project>
       <Name>MoreMountains.Tools.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.Feel.Demos.HDRP.csproj">
-      <Project>{F2EF811D-52CC-1022-C720-7FE16BB37BA6}</Project>
-      <Name>MoreMountains.Feel.Demos.HDRP</Name>
-    </ProjectReference>
     <ProjectReference Include="V_Animation.csproj">
       <Project>{DD4E8315-048B-81FD-1D64-74CBC8F6A61F}</Project>
       <Name>V_Animation</Name>
-    </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
-      <Project>{5DADD2CB-895F-0BFE-AE5F-F0AD28BE240F}</Project>
-      <Name>MoreMountains.NiceVibrations.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{6F6F0E28-E284-1ADC-3EE7-C7AFE0D45196}</Project>
@@ -878,17 +862,9 @@
       <Project>{A4B359A5-703E-44F1-5EDC-D3EA5FC25595}</Project>
       <Name>MoreMountains.Interface.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
-      <Project>{903E49C4-1441-3ECF-5F79-EAA33EDF370F}</Project>
-      <Name>MoreMountains.NiceVibrations.Haptics</Name>
-    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.Editor.csproj">
       <Project>{27EEED08-3080-C21C-C592-013DC4B3DE8E}</Project>
       <Name>MoreMountains.Feedbacks.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MoreMountains.Feel.Demos.csproj">
-      <Project>{396EB7A0-704A-D8C9-9AA4-A05D6434F7C1}</Project>
-      <Name>MoreMountains.Feel.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Interface.csproj">
       <Project>{CFFE6E48-A032-66D2-74B5-E2D14282E1E6}</Project>
@@ -901,10 +877,6 @@
     <ProjectReference Include="MoreMountains.Tools.Feedbacks.Editor.csproj">
       <Project>{9EBB9E3C-6FE1-C266-A53B-60E06079F9C1}</Project>
       <Name>MoreMountains.Tools.Feedbacks.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MoreMountains.Feel.Demos.URP.csproj">
-      <Project>{AA4E7AE1-8AE3-84B8-F211-18D07B2E9AAF}</Project>
-      <Name>MoreMountains.Feel.Demos.URP</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Cinemachine.csproj">
       <Project>{24053C0F-BDDD-DEBE-B0E6-A87B35AFD2D1}</Project>
@@ -929,6 +901,34 @@
     <ProjectReference Include="MoreMountains.Tools.csproj">
       <Project>{70F57DD7-611C-D2B1-43EC-77AC33DD8B8C}</Project>
       <Name>MoreMountains.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feel.Demos.csproj">
+      <Project>{396EB7A0-704A-D8C9-9AA4-A05D6434F7C1}</Project>
+      <Name>MoreMountains.Feel.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
+      <Project>{903E49C4-1441-3ECF-5F79-EAA33EDF370F}</Project>
+      <Name>MoreMountains.NiceVibrations.Haptics</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
+      <Project>{4052907D-CEE5-B75C-8018-170AAF848DCB}</Project>
+      <Name>MoreMountains.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feel.Demos.HDRP.csproj">
+      <Project>{F2EF811D-52CC-1022-C720-7FE16BB37BA6}</Project>
+      <Name>MoreMountains.Feel.Demos.HDRP</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
+      <Project>{5DADD2CB-895F-0BFE-AE5F-F0AD28BE240F}</Project>
+      <Name>MoreMountains.NiceVibrations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
+      <Project>{5D3785C9-5A28-5663-E02E-E09836D12BAE}</Project>
+      <Name>MoreMountains.NiceVibrations.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feel.Demos.URP.csproj">
+      <Project>{AA4E7AE1-8AE3-84B8-F211-18D07B2E9AAF}</Project>
+      <Name>MoreMountains.Feel.Demos.URP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

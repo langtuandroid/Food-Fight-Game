@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour
 
         for (int i = 0; i < AICharacterBattles.Count; i++)
         {
-            AICharacterBattles[i].Setup(AICharacterBattles[i].IsPlayerTeam(), AICharacterBattles[i].positionNumber);
+            AICharacterBattles[i].Setup(AICharacterBattles[i].IsPlayerTeam(), new Vector3(0,0,0), AICharacterBattles[i].positionNumber);
         }
         return AICharacterBattles;
     }
@@ -101,8 +101,8 @@ public class EnemyAI : MonoBehaviour
 
         List<CharacterBattle> livingCharacters = GetRemainingChracters(playerCharacterBattles);
         int ranNum = Random.Range(0, livingCharacters.Count);
-        activePlayerCharacter = livingCharacters[ranNum];
-        activePlayerCharacter = FindWeakestCharacter(livingCharacters);
+        activePlayerCharacter = livingCharacters[2];
+        //activePlayerCharacter = FindWeakestCharacter(livingCharacters);
         activePlayerCharacter.ShowSelectionCircle(); 
     }
 
